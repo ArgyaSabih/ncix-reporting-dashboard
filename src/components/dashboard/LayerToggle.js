@@ -1,6 +1,6 @@
 const LayerToggle = () => {
   return (
-    <>
+    <div className="gap-0!">
       <h2 className="text-sm font-semibold text-slate-500 uppercase mb-1">
         View Mode
       </h2>
@@ -66,7 +66,7 @@ const LayerToggle = () => {
           <span className="text-slate-700">Trace ASN</span>
         </label>
       </div>
-    </>
+    </div>
   );
 };
 

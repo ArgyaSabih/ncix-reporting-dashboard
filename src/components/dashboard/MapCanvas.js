@@ -1,8 +1,10 @@
 const MapCanvas = () => {
   return (
-    <>
-      <h1>Halo</h1>
-    </>
+    <div className="w-3/4 px-6">
+      <div className="w-full h-full bg-slate-200 rounded-md flex items-center justify-center">
+        Peta Akan Muncul di Sini
+      </div>
+    </div>
   );
 };
 

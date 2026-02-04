@@ -3,7 +3,7 @@ import LayerToggle from "../dashboard/LayerToggle";
 
 const Sidebar = () => {
   return (
-    <div className="w-full flex-1/3 flex-col border border-black mt-12 ml-6 p-4 gap-10">
+    <div className="w-1/4 flex h-full gap-20 flex-col border border-black ml-6 p-4 rounded-sm">
       <LayerToggle />
       <Link href="">
         <button className=" w-full h-12 bg-[#AC0505] flex justify-center items-center rounded-lg">
