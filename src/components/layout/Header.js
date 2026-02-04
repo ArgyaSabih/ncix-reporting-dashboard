@@ -13,8 +13,8 @@ const Header = () => {
   const totalCities = 12; // Total cities target
 
   return (
-    <div className="w-full bg-[#AC0505] h-24 flex flex-col items-center justify-center text-white">
-      <h1 className="text-3xl font-bold mb-3">NeuCentriX • Membership & Presence Dashboard</h1>
+    <div className="w-full bg-[#AC0505] h-20 flex-shrink-0 flex flex-col items-center justify-center text-white">
+      <h1 className="text-2xl font-bold mb-2">NeuCentriX • Membership & Presence Dashboard</h1>
       <div className="flex justify-center gap-12 text-sm">
         <div>
           <span className="font-normal">Period: </span>

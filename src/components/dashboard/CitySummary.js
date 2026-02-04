@@ -47,7 +47,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
           : "Member Class C";
 
     return (
-      <div className="flex-1 border border-slate-300 p-6 rounded-md bg-white">
+      <div className="flex-1 border  border-slate-300 p-6 rounded-md bg-white">
         <h2 className="text-lg font-bold text-slate-800 mb-4">City Summary</h2>
 
         <div className="flex items-center gap-2 mb-4">

@@ -5,10 +5,7 @@ import LayerToggle from "../dashboard/LayerToggle";
 
 const Sidebar = ({activeLayer, onLayerChange, viewMode, onViewModeChange}) => {
   return (
-    <div
-      className="w-64 flex flex-col border border-slate-300 p-5 rounded-md bg-white"
-      style={{minHeight: "600px"}}
-    >
+    <div className="w-64 flex-shrink-0 flex flex-col border border-slate-300 p-5 rounded-md bg-white h-full overflow-auto">
       <LayerToggle
         activeLayer={activeLayer}
         onLayerChange={onLayerChange}
