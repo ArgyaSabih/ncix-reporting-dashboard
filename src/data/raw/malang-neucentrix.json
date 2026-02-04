@@ -1,0 +1,45 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Malang",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "Jl. Jenderal Basuki Rahmat No.11 A,",
+    "Address 2": "Kauman, Kec. Klojen",
+    "Suite": "",
+    "Location": "Malang, Jawa Timur, 65119",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-7.980217, 112.629902",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:06:55Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "",
+    "Technical Phone": "",
+    "Sales Email": "",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [],
+  "Networks": [
+    {
+      "Peer Name": "Lintasarta",
+      "ASN": "4800"
+    },
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "ASN": "64315"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    }
+  ]
+}

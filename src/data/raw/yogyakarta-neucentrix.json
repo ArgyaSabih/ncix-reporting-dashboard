@@ -1,0 +1,165 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Yogyakarta Kota Baru",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "http://www.telkom.co.id",
+    "Address 1": "Kotabaru, Kec. Gondokusuman, Kota Yogyakarta",
+    "Address 2": "",
+    "Suite": "",
+    "Location": "Yogyakarta, , 55224",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": ", ",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:01:19Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "noc@telkom.co.id",
+    "Technical Phone": "",
+    "Sales Email": "noc@telkom.co.id",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [
+    {
+      "Carrier": "CANNETWORKS"
+    }
+  ],
+  "Exchanges": [
+    {
+      "Exchange": "CitraIX Yogyakarta",
+      "Long Name": "Citranet Internet Exchange Yogyakarta",
+      "Networks": "61"
+    },
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    },
+    {
+      "Exchange": "UNY-IX",
+      "Long Name": "Universitas Negeri Yogyakarta Internet Exchange Point",
+      "Networks": "35"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "ADEAKSA INDO JAYATAMA",
+      "ASN": "138123"
+    },
+    {
+      "Peer Name": "AYONET",
+      "ASN": "138860"
+    },
+    {
+      "Peer Name": "CANNETWORKS",
+      "ASN": "153077"
+    },
+    {
+      "Peer Name": "CitraIX Route Servers",
+      "ASN": "58500"
+    },
+    {
+      "Peer Name": "CITRANET",
+      "ASN": "23951"
+    },
+    {
+      "Peer Name": "Citraweb Digital Multisolusi",
+      "ASN": "138069"
+    },
+    {
+      "Peer Name": "DEKADATA",
+      "ASN": "149369"
+    },
+    {
+      "Peer Name": "DES Teknologi Informasi",
+      "ASN": "45302"
+    },
+    {
+      "Peer Name": "DINAMIKA MEDIAKOM",
+      "ASN": "63508"
+    },
+    {
+      "Peer Name": "Global Media Data Prima",
+      "ASN": "138089"
+    },
+    {
+      "Peer Name": "Globus Melia Indotama",
+      "ASN": "142305"
+    },
+    {
+      "Peer Name": "Indonesia neuCentrIX",
+      "ASN": "137019"
+    },
+    {
+      "Peer Name": "Jaringan VNT Indonesia",
+      "ASN": "59278"
+    },
+    {
+      "Peer Name": "Jinom Network Indonesia",
+      "ASN": "138064"
+    },
+    {
+      "Peer Name": "Lintas Data Prima",
+      "ASN": "45305"
+    },
+    {
+      "Peer Name": "Lintasarta",
+      "ASN": "4800"
+    },
+    {
+      "Peer Name": "MEGADATA-ISP",
+      "ASN": "136873"
+    },
+    {
+      "Peer Name": "OptiCore+",
+      "ASN": "141664"
+    },
+    {
+      "Peer Name": "PT Media Sarana Akses",
+      "ASN": "38760"
+    },
+    {
+      "Peer Name": "PT Media Sarana Data (GMEDIA)",
+      "ASN": "55666"
+    },
+    {
+      "Peer Name": "PT Tunas Media Data",
+      "ASN": "151567"
+    },
+    {
+      "Peer Name": "Ring Media Nusantara",
+      "ASN": "141642"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    },
+    {
+      "Peer Name": "TERABIT",
+      "ASN": "131706"
+    },
+    {
+      "Peer Name": "Tonggak Teknologi Netikom",
+      "ASN": "140481"
+    },
+    {
+      "Peer Name": "Union Routelink Communication",
+      "ASN": "38156"
+    },
+    {
+      "Peer Name": "Universitas Negeri Yogyakarta",
+      "ASN": "55674"
+    },
+    {
+      "Peer Name": "Wifikita",
+      "ASN": "140479"
+    }
+  ]
+}

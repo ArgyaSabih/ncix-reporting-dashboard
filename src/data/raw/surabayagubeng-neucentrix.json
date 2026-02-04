@@ -1,0 +1,215 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Surabaya Gubeng",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "Jl. Sumatera No.131",
+    "Address 2": "Kec. Gubeng",
+    "Suite": "",
+    "Location": "Surabaya, Jawa Timur, 60281",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-7.2762, 112.745216",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T22:57:34Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "stardc@telkomhosting.com",
+    "Technical Phone": "+62315013434",
+    "Sales Email": "neucentrix@telkom.co.id",
+    "Sales Phone": "+628118421502",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "Abhinawa Sumberdaya Asia - AS138077",
+      "ASN": "138077"
+    },
+    {
+      "Peer Name": "ADSNET (ads.net.id)",
+      "ASN": "38165"
+    },
+    {
+      "Peer Name": "APEX Network - JT",
+      "ASN": "153327"
+    },
+    {
+      "Peer Name": "CAPOENG",
+      "ASN": "138829"
+    },
+    {
+      "Peer Name": "CIPTA TRIMETIKA",
+      "ASN": "139405"
+    },
+    {
+      "Peer Name": "Cubiespot Pilar Data Nusantara",
+      "ASN": "141126"
+    },
+    {
+      "Peer Name": "Digital Satellite Indonesia",
+      "ASN": "24538"
+    },
+    {
+      "Peer Name": "Era Network Indonesia",
+      "ASN": "152429"
+    },
+    {
+      "Peer Name": "Fiber Networks Indonesia",
+      "ASN": "58369"
+    },
+    {
+      "Peer Name": "FiberStar AS136106",
+      "ASN": "136106"
+    },
+    {
+      "Peer Name": "Garuda Media Telematika",
+      "ASN": "136874"
+    },
+    {
+      "Peer Name": "Gayatri Lintas Nusantara",
+      "ASN": "141607"
+    },
+    {
+      "Peer Name": "Herza Cloud",
+      "ASN": "140443"
+    },
+    {
+      "Peer Name": "Hipernet Indodata AS38758",
+      "ASN": "38758"
+    },
+    {
+      "Peer Name": "IdeaNet",
+      "ASN": "140482"
+    },
+    {
+      "Peer Name": "Indonesia neuCentrIX",
+      "ASN": "137019"
+    },
+    {
+      "Peer Name": "Indonusa System Integrator Prima",
+      "ASN": "4382"
+    },
+    {
+      "Peer Name": "Inovasi Tjaraka Buana",
+      "ASN": "63885"
+    },
+    {
+      "Peer Name": "Internet Ini Saja",
+      "ASN": "138818"
+    },
+    {
+      "Peer Name": "Inti Data Telematika",
+      "ASN": "133817"
+    },
+    {
+      "Peer Name": "Jala Lintas Media AS55685",
+      "ASN": "55685"
+    },
+    {
+      "Peer Name": "Lexxa Data Indonusa",
+      "ASN": "139428"
+    },
+    {
+      "Peer Name": "Lintas Data Prima",
+      "ASN": "45305"
+    },
+    {
+      "Peer Name": "Lintas Jaringan Nusantara",
+      "ASN": "58821"
+    },
+    {
+      "Peer Name": "Maxindo Mitra Solusi",
+      "ASN": "38320"
+    },
+    {
+      "Peer Name": "Media Antar Nusa",
+      "ASN": "23679"
+    },
+    {
+      "Peer Name": "MEGADATA-ISP",
+      "ASN": "136873"
+    },
+    {
+      "Peer Name": "Menaksopal Link Nusantara",
+      "ASN": "139981"
+    },
+    {
+      "Peer Name": "Milenial Inti Telekomunikasi",
+      "ASN": "141898"
+    },
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "ASN": "64315"
+    },
+    {
+      "Peer Name": "MyRise AS141140",
+      "ASN": "141140"
+    },
+    {
+      "Peer Name": "Pratama Hasta Utama Solusindo",
+      "ASN": "142352"
+    },
+    {
+      "Peer Name": "PT BLiP Integrator Provider",
+      "ASN": "149746"
+    },
+    {
+      "Peer Name": "PT Media Sarana Data (GMEDIA)",
+      "ASN": "55666"
+    },
+    {
+      "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+      "ASN": "45325"
+    },
+    {
+      "Peer Name": "PT Sinar Alam Abadi",
+      "ASN": "17440"
+    },
+    {
+      "Peer Name": "PT. MITRA VISIONER PRATAMA",
+      "ASN": "147094"
+    },
+    {
+      "Peer Name": "Rasi Bintang Perkasa",
+      "ASN": "138109"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    },
+    {
+      "Peer Name": "TERABIT",
+      "ASN": "131706"
+    },
+    {
+      "Peer Name": "Trans Hybrid Communication",
+      "ASN": "63516"
+    },
+    {
+      "Peer Name": "WowNET",
+      "ASN": "138074"
+    },
+    {
+      "Peer Name": "Wowrack Indonesia",
+      "ASN": "58381"
+    },
+    {
+      "Peer Name": "Yasmin Amanah Media",
+      "ASN": "139967"
+    }
+  ]
+}

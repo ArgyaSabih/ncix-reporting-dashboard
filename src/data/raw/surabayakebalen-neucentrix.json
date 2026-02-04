@@ -1,0 +1,49 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Surabaya Kebalen",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "DC NeuCentrIX Surabaya Kebalen",
+    "Address 2": "Jl. Kalisosok Dapuan Bend. Gg. I No.12",
+    "Suite": "",
+    "Location": "Surabaya, Jawa Timur, 60175",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-7.229522, 112.735092",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:06:55Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "",
+    "Technical Phone": "",
+    "Sales Email": "",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [],
+  "Networks": [
+    {
+      "Peer Name": "Kaopu Cloud HK",
+      "ASN": "138915"
+    },
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "ASN": "64315"
+    },
+    {
+      "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+      "ASN": "45325"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    }
+  ]
+}

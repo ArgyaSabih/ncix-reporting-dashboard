@@ -1,0 +1,105 @@
+{
+  "Network": {
+    "Name": "Indonesia neuCentrIX",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "ASN": "137019",
+    "IRR as-set/route-set": "AS137019",
+    "Route Server URL": "",
+    "Looking Glass URL": "",
+    "Network Types": "",
+    "IPv4 Prefixes": "2000",
+    "IPv6 Prefixes": "10000",
+    "Traffic Levels": "300-500Gbps",
+    "Traffic Ratios": "Not Disclosed",
+    "Geographic Scope": "Asia Pacific",
+    "Protocols Supported": "Unicast IPv4 Multicast IPv6 Never via route servers",
+    "Last Updated": "2024-06-07T02:55:30Z",
+    "Public Peering Info Updated": "2024-05-27T06:44:50Z",
+    "Peering Facility Info Updated": "2024-06-07T02:55:25Z",
+    "Contact Info Updated": "2024-05-27T06:42:01Z",
+    "Notes": "",
+    "RIR Status": "ok",
+    "RIR Status Updated": "2024-06-26T04:47:55Z",
+    "Logo": "",
+    "Peering Policy Information": "",
+    "Peering Policy": "",
+    "General Policy": "Open",
+    "Multiple Locations": "Not Required",
+    "Ratio Requirement": "No",
+    "Contract Requirement": "Not Required",
+    "Health Check": ""
+  },
+  "Public Peering Exchange Points": [
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "IPv4": "36.91.197.1",
+      "ASN": "137019",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": "",
+      "RS Peer": "",
+      "BFD Support": ""
+    }
+  ],
+  "Interconnection Facilities": [
+    {
+      "Facility": "Hyperscale Data Center (HDC)",
+      "Country": "Indonesia",
+      "City": "Kabupaten Bekasi"
+    },
+    {
+      "Facility": "neuCentrIX - Bandung",
+      "Country": "Indonesia",
+      "City": "Kota Bandung"
+    },
+    {
+      "Facility": "neuCentrIX - Batam",
+      "Country": "Indonesia",
+      "City": "Batam"
+    },
+    {
+      "Facility": "neuCentrIX - Karet Tengsin",
+      "Country": "Indonesia",
+      "City": "Jakarta Pusat"
+    },
+    {
+      "Facility": "neuCentrIX - Medan",
+      "Country": "Indonesia",
+      "City": "Medan"
+    },
+    {
+      "Facility": "neuCentrIX - Meruya",
+      "Country": "Indonesia",
+      "City": "Jakarta"
+    },
+    {
+      "Facility": "neuCentrIX - Pekanbaru",
+      "Country": "Indonesia",
+      "City": "Pekanbaru"
+    },
+    {
+      "Facility": "neuCentrIX - Semarang",
+      "Country": "Indonesia",
+      "City": "Semarang"
+    },
+    {
+      "Facility": "neuCentrIX - Surabaya Gubeng",
+      "Country": "Indonesia",
+      "City": "Surabaya"
+    },
+    {
+      "Facility": "neuCentrIX - Ulin",
+      "Country": "Indonesia",
+      "City": "Banjarmasin"
+    },
+    {
+      "Facility": "neuCentrIX - Yogyakarta Kota Baru",
+      "Country": "Indonesia",
+      "City": "Yogyakarta"
+    }
+  ],
+  "Contact Points": []
+}

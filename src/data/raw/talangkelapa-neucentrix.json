@@ -1,0 +1,59 @@
+{
+  "Facility": {
+    "Name": "neuCentriX - Talang Kelapa",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "DC neuCentrIX Talang Kalapa",
+    "Address 2": "Jl. Kol. H Burlian No.419 KM.7",
+    "Suite": "",
+    "Location": "Palembang, Palembang, 30151",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-2.951902, 104.734148",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:06:54Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "",
+    "Technical Phone": "",
+    "Sales Email": "",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [
+    {
+      "Exchange": "JDX",
+      "Long Name": "JDX Internet Exchange",
+      "Networks": "1"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "Hipernet Indodata AS38758",
+      "ASN": "38758"
+    },
+    {
+      "Peer Name": "MEGADATA-ISP",
+      "ASN": "136873"
+    },
+    {
+      "Peer Name": "PT Telemedia Prima Nusantara - AS153087",
+      "ASN": "153087"
+    },
+    {
+      "Peer Name": "PT. KREATIF GLOBAL SOLUSINDO",
+      "ASN": "140467"
+    },
+    {
+      "Peer Name": "SPM-AS-ID",
+      "ASN": "38761"
+    }
+  ]
+}

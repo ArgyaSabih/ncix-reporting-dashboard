@@ -1,0 +1,107 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Batam",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "DC NeuCentrIX Batam Center Jl. Laksamana Bintan, Baloi Permai",
+    "Address 2": "Kecamatan Batam Kota",
+    "Suite": "",
+    "Location": "Batam, Kepulauan Riau, 29444",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "1.130722, 104.055194",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T22:59:21Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "neucentrix.operation@sigma.co.id",
+    "Technical Phone": "",
+    "Sales Email": "neucentrix@telkom.co.id",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "3D Tech",
+      "ASN": "58553"
+    },
+    {
+      "Peer Name": "Azonne Limited",
+      "ASN": "59217"
+    },
+    {
+      "Peer Name": "DUMAI MANDIRI NET",
+      "ASN": "134655"
+    },
+    {
+      "Peer Name": "Indonesia neuCentrIX",
+      "ASN": "137019"
+    },
+    {
+      "Peer Name": "kejoraNET",
+      "ASN": "139949"
+    },
+    {
+      "Peer Name": "Lintas Jaringan Nusantara",
+      "ASN": "58821"
+    },
+    {
+      "Peer Name": "Medianusa Permana",
+      "ASN": "131746"
+    },
+    {
+      "Peer Name": "Milenial Inti Telekomunikasi",
+      "ASN": "141898"
+    },
+    {
+      "Peer Name": "Mitra Lintas Multimedia",
+      "ASN": "136093"
+    },
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "ASN": "64315"
+    },
+    {
+      "Peer Name": "PANCA DUTA UTAMA",
+      "ASN": "137316"
+    },
+    {
+      "Peer Name": "PROXINET",
+      "ASN": "140401"
+    },
+    {
+      "Peer Name": "PT Buana Visualnet Sentra",
+      "ASN": "139982"
+    },
+    {
+      "Peer Name": "PT. MITRA VISIONER PRATAMA",
+      "ASN": "147094"
+    },
+    {
+      "Peer Name": "Solusindo Bintang Pratama",
+      "ASN": "38753"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia International",
+      "ASN": "58815"
+    }
+  ]
+}
