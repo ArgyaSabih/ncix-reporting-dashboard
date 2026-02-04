@@ -180,9 +180,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
           </div>
           <div className="flex justify-between py-2 border-b border-slate-200">
             <span className="font-medium">Cities Covered:</span>
-            <span className="font-bold">
-              {uniqueCities}/{totalCities}
-            </span>
+            <span className="font-bold">{uniqueCities}</span>
           </div>
           <div className="py-2 border-b border-slate-200">
             <span className="font-medium">Membership Mix:</span>
