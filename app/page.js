@@ -1,6 +1,6 @@
 "use client";
 
-import {useState} from "react";
+import { useState } from "react";
 import CitySummary from "@/src/components/dashboard/CitySummary";
 import DataTable from "@/src/components/dashboard/DataTable";
 import MapCanvas from "@/src/components/dashboard/MapCanvas";
@@ -42,13 +42,18 @@ export default function Home() {
         />
       </div>
       <div className="flex gap-4 p-4 pt-0 h-80 overflow-hidden">
-        <CitySummary viewMode={viewMode} selectedCity={selectedCity} selectedCustomer={selectedCustomer} />
+        <CitySummary
+          viewMode={viewMode}
+          selectedCity={selectedCity}
+          selectedCustomer={selectedCustomer}
+        />
         <MembershipChart
           viewMode={viewMode}
           selectedCity={selectedCity}
           selectedCustomer={selectedCustomer}
         />
         <DataTable
+          key={selectedCity?.city || "all"}
           viewMode={viewMode}
           selectedCity={selectedCity}
           selectedCustomer={selectedCustomer}
