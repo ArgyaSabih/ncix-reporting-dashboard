@@ -25,9 +25,9 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col w-screen h-screen overflow-hidden bg-white">
       <Header />
-      <div className="flex flex-1 gap-4 p-4">
+      <div className="flex flex-1 gap-4 p-4 overflow-hidden">
         <Sidebar
           activeLayer={activeLayer}
           onLayerChange={setActiveLayer}
@@ -41,7 +41,7 @@ export default function Home() {
           onCityClick={handleCityClick}
         />
       </div>
-      <div className="flex gap-4 p-4 pt-0">
+      <div className="flex gap-4 p-4 pt-0 h-80 overflow-hidden">
         <CitySummary viewMode={viewMode} selectedCity={selectedCity} selectedCustomer={selectedCustomer} />
         <MembershipChart
           viewMode={viewMode}
