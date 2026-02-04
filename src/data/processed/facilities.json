@@ -1,0 +1,2684 @@
+[
+  {
+    "name": "aceh",
+    "facility": {
+      "Name": "neuCentrIX - Aceh",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id",
+      "Address 1": "Jl. Sultan Mahmudsyah,",
+      "Address 2": "Kp. Baru, Kec. Baiturrahman",
+      "Suite": "",
+      "Location": "Kota Banda Aceh, Aceh, 23127",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": ", ",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:54Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [],
+    "networks": [
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 1,
+      "lastUpdated": "2025-09-26T23:06:54Z"
+    },
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    }
+  },
+  {
+    "name": "balikpapan",
+    "facility": {
+      "Name": "neuCentrIX - Balikpapan Batu Ampar",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "neuCentrIX Batuampar; Jl. MT Haryono No. 169",
+      "Address 2": "",
+      "Suite": "",
+      "Location": "Balikpapan, Kalimantan Timur, 76136",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-1.220361, 116.861696",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:05:34Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "noc@telkom.co.id",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "ADIZKA LINTAS DATA",
+        "ASN": "138887"
+      },
+      {
+        "Peer Name": "GlobalXtreme",
+        "ASN": "45701"
+      },
+      {
+        "Peer Name": "Hipernet Indodata AS38758",
+        "ASN": "38758"
+      },
+      {
+        "Peer Name": "Inti Data Telematika",
+        "ASN": "133817"
+      },
+      {
+        "Peer Name": "LAJANET",
+        "ASN": "141957"
+      },
+      {
+        "Peer Name": "Milenial Inti Telekomunikasi",
+        "ASN": "141898"
+      },
+      {
+        "Peer Name": "Primacom Interbuana",
+        "ASN": "133815"
+      },
+      {
+        "Peer Name": "PT Media Sarana Data (GMEDIA)",
+        "ASN": "55666"
+      },
+      {
+        "Peer Name": "PT Patria Lintas Jaya",
+        "ASN": "139365"
+      },
+      {
+        "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+        "ASN": "45325"
+      },
+      {
+        "Peer Name": "PT.COMTELINDO",
+        "ASN": "136054"
+      },
+      {
+        "Peer Name": "Satnetcom Balikpapan",
+        "ASN": "24204"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 1,
+      "totalNetworks": 13,
+      "lastUpdated": "2025-09-26T23:05:34Z"
+    },
+    "coordinates": {
+      "lat": -1.220361,
+      "lng": 116.861696
+    }
+  },
+  {
+    "name": "bandung",
+    "facility": {
+      "Name": "neuCentrIX - Bandung",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "http://www.telkom.co.id",
+      "Address 1": "neuCentrIX Lembong; Jl. Lembong No.11, Braga,",
+      "Address 2": "Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40111",
+      "Suite": "",
+      "Location": "Kota Bandung, Jawa Barat, 40111",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-6.916764, 107.611376",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T22:57:51Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "noc@telkom.co.id",
+      "Technical Phone": "",
+      "Sales Email": "noc@telkom.co.id",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "ADSNET (ads.net.id)",
+        "ASN": "38165"
+      },
+      {
+        "Peer Name": "AFNALINK",
+        "ASN": "149723"
+      },
+      {
+        "Peer Name": "ARIF_AWALUDIN",
+        "ASN": "211338"
+      },
+      {
+        "Peer Name": "Arjuna Global Teknologi Indonesia",
+        "ASN": "135480"
+      },
+      {
+        "Peer Name": "Artha Media Lintas Nusa",
+        "ASN": "63490"
+      },
+      {
+        "Peer Name": "Atharva",
+        "ASN": "150249"
+      },
+      {
+        "Peer Name": "BITSNETID",
+        "ASN": "132637"
+      },
+      {
+        "Peer Name": "Citra Jelajah Informatika",
+        "ASN": "131717"
+      },
+      {
+        "Peer Name": "Comtronics Systems",
+        "ASN": "23949"
+      },
+      {
+        "Peer Name": "DINAMIKA MEDIAKOM",
+        "ASN": "63508"
+      },
+      {
+        "Peer Name": "DINETKAN",
+        "ASN": "152032"
+      },
+      {
+        "Peer Name": "FIBERCONNECT.ID",
+        "ASN": "142310"
+      },
+      {
+        "Peer Name": "First Media",
+        "ASN": "23700"
+      },
+      {
+        "Peer Name": "Global Erasiber Teknologi",
+        "ASN": "147106"
+      },
+      {
+        "Peer Name": "Globalnet Multi Data",
+        "ASN": "132669"
+      },
+      {
+        "Peer Name": "Hanasta Dakara",
+        "ASN": "24527"
+      },
+      {
+        "Peer Name": "Hayat Teknologi Informatika",
+        "ASN": "142375"
+      },
+      {
+        "Peer Name": "Hipernet Indodata AS38758",
+        "ASN": "38758"
+      },
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "Inovasi Tjaraka Buana",
+        "ASN": "63885"
+      },
+      {
+        "Peer Name": "Internet Ini Saja",
+        "ASN": "138818"
+      },
+      {
+        "Peer Name": "IOSYS Media Data",
+        "ASN": "141056"
+      },
+      {
+        "Peer Name": "Jembatan Data Pangrango",
+        "ASN": "141071"
+      },
+      {
+        "Peer Name": "Jujur Amanah Barokah",
+        "ASN": "149971"
+      },
+      {
+        "Peer Name": "Lintas Jaringan Nusantara",
+        "ASN": "58821"
+      },
+      {
+        "Peer Name": "Lintas Network Solusi",
+        "ASN": "150279"
+      },
+      {
+        "Peer Name": "MAINTEK",
+        "ASN": "153131"
+      },
+      {
+        "Peer Name": "Media Antar Nusa",
+        "ASN": "23679"
+      },
+      {
+        "Peer Name": "Media Cepat Indonesia",
+        "ASN": "141137"
+      },
+      {
+        "Peer Name": "MELSA",
+        "ASN": "9657"
+      },
+      {
+        "Peer Name": "Milenial Inti Telekomunikasi",
+        "ASN": "141898"
+      },
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "MLINK.ID",
+        "ASN": "149365"
+      },
+      {
+        "Peer Name": "Myarsyila Indonesia",
+        "ASN": "147120"
+      },
+      {
+        "Peer Name": "PLBNET",
+        "ASN": "139972"
+      },
+      {
+        "Peer Name": "PRIMABANANEN",
+        "ASN": "133535"
+      },
+      {
+        "Peer Name": "PT CEMERLANG INTERNET INDONESIA",
+        "ASN": "152764"
+      },
+      {
+        "Peer Name": "PT Gateway Internet Indonesia",
+        "ASN": "147155"
+      },
+      {
+        "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+        "ASN": "45325"
+      },
+      {
+        "Peer Name": "PT RAJASA SINERGI KOMUNIKASI",
+        "ASN": "153895"
+      },
+      {
+        "Peer Name": "PT TASKA SARANA NUSANTARA",
+        "ASN": "152775"
+      },
+      {
+        "Peer Name": "PT Vaiotech Lintas Nusantara",
+        "ASN": "142383"
+      },
+      {
+        "Peer Name": "PT. FORIT ASTA SOLUSINDO",
+        "ASN": "139993"
+      },
+      {
+        "Peer Name": "PT. LINTAS DATA TRANS",
+        "ASN": "151522"
+      },
+      {
+        "Peer Name": "PT. MITRA VISIONER PRATAMA",
+        "ASN": "147094"
+      },
+      {
+        "Peer Name": "PT.PC24 Telekomunikasi Indonesia",
+        "ASN": "141142"
+      },
+      {
+        "Peer Name": "Radmila Pratama Multireka",
+        "ASN": "141125"
+      },
+      {
+        "Peer Name": "Ring Media Nusantara",
+        "ASN": "141642"
+      },
+      {
+        "Peer Name": "Skyline Semesta",
+        "ASN": "55653"
+      },
+      {
+        "Peer Name": "Smart Teknologi Utama",
+        "ASN": "141077"
+      },
+      {
+        "Peer Name": "Solusindo Bintang Pratama",
+        "ASN": "38753"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      },
+      {
+        "Peer Name": "TERABIT",
+        "ASN": "131706"
+      },
+      {
+        "Peer Name": "Trans Hybrid Communication",
+        "ASN": "63516"
+      },
+      {
+        "Peer Name": "Wahyu Adidaya Network",
+        "ASN": "140469"
+      },
+      {
+        "Peer Name": "WIFIBANTER.NET",
+        "ASN": "150555"
+      },
+      {
+        "Peer Name": "Yasmin Amanah Media",
+        "ASN": "139967"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 1,
+      "totalNetworks": 57,
+      "lastUpdated": "2025-09-26T22:57:51Z"
+    },
+    "coordinates": {
+      "lat": -6.916764,
+      "lng": 107.611376
+    }
+  },
+  {
+    "name": "batam",
+    "facility": {
+      "Name": "neuCentrIX - Batam",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "DC NeuCentrIX Batam Center Jl. Laksamana Bintan, Baloi Permai",
+      "Address 2": "Kecamatan Batam Kota",
+      "Suite": "",
+      "Location": "Batam, Kepulauan Riau, 29444",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "1.130722, 104.055194",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T22:59:21Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "neucentrix.operation@sigma.co.id",
+      "Technical Phone": "",
+      "Sales Email": "neucentrix@telkom.co.id",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "3D Tech",
+        "ASN": "58553"
+      },
+      {
+        "Peer Name": "Azonne Limited",
+        "ASN": "59217"
+      },
+      {
+        "Peer Name": "DUMAI MANDIRI NET",
+        "ASN": "134655"
+      },
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "kejoraNET",
+        "ASN": "139949"
+      },
+      {
+        "Peer Name": "Lintas Jaringan Nusantara",
+        "ASN": "58821"
+      },
+      {
+        "Peer Name": "Medianusa Permana",
+        "ASN": "131746"
+      },
+      {
+        "Peer Name": "Milenial Inti Telekomunikasi",
+        "ASN": "141898"
+      },
+      {
+        "Peer Name": "Mitra Lintas Multimedia",
+        "ASN": "136093"
+      },
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "PANCA DUTA UTAMA",
+        "ASN": "137316"
+      },
+      {
+        "Peer Name": "PROXINET",
+        "ASN": "140401"
+      },
+      {
+        "Peer Name": "PT Buana Visualnet Sentra",
+        "ASN": "139982"
+      },
+      {
+        "Peer Name": "PT. MITRA VISIONER PRATAMA",
+        "ASN": "147094"
+      },
+      {
+        "Peer Name": "Solusindo Bintang Pratama",
+        "ASN": "38753"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia International",
+        "ASN": "58815"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 1,
+      "totalNetworks": 17,
+      "lastUpdated": "2025-09-26T22:59:21Z"
+    },
+    "coordinates": {
+      "lat": 1.130722,
+      "lng": 104.055194
+    }
+  },
+  {
+    "name": "denpasar",
+    "facility": {
+      "Name": "neuCentrIX - Denpasar Kaliasem",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "http://www.neucentrix.co.id",
+      "Address 1": "DC NeuCentrIX Kaliasem",
+      "Address 2": "Jl. Kaliasem No. 5, Dangin Puri Kauh,",
+      "Suite": "",
+      "Location": "Denpasar, Bali, 80232",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-8.655012, 115.218488",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:05:35Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [
+      {
+        "Carrier": "DETELNETWORKS"
+      }
+    ],
+    "exchanges": [
+      {
+        "Exchange": "CXC Denpasar",
+        "Long Name": "CLOUDXCHANGE",
+        "Networks": "55"
+      },
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "Alam Daur Nusantara",
+        "ASN": "150913"
+      },
+      {
+        "Peer Name": "Andira Infomedia",
+        "ASN": "55690"
+      },
+      {
+        "Peer Name": "ARTAMEDIA CITRA TELEMATIKA INDONESIA",
+        "ASN": "136861"
+      },
+      {
+        "Peer Name": "DETELNET",
+        "ASN": "58396"
+      },
+      {
+        "Peer Name": "DINETKAN",
+        "ASN": "152032"
+      },
+      {
+        "Peer Name": "Gayatri Lintas Nusantara",
+        "ASN": "141607"
+      },
+      {
+        "Peer Name": "GlobalXtreme",
+        "ASN": "45701"
+      },
+      {
+        "Peer Name": "Hipernet Indodata AS38758",
+        "ASN": "38758"
+      },
+      {
+        "Peer Name": "Inovasi Tjaraka Buana",
+        "ASN": "63885"
+      },
+      {
+        "Peer Name": "Lintas Jaringan Nusantara",
+        "ASN": "58821"
+      },
+      {
+        "Peer Name": "Milenial Inti Telekomunikasi",
+        "ASN": "141898"
+      },
+      {
+        "Peer Name": "MITRA TELEMEDIA MANUNGGAL",
+        "ASN": "136841"
+      },
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "PT BLiP Integrator Provider",
+        "ASN": "149746"
+      },
+      {
+        "Peer Name": "PT Zinet Media Nusantara",
+        "ASN": "152081"
+      },
+      {
+        "Peer Name": "PT. Andal Berjaya Infomedia",
+        "ASN": "141920"
+      },
+      {
+        "Peer Name": "PT. MITRA VISIONER PRATAMA",
+        "ASN": "147094"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      },
+      {
+        "Peer Name": "Tonggak Teknologi Netikom",
+        "ASN": "140481"
+      },
+      {
+        "Peer Name": "Varnion Technology",
+        "ASN": "45287"
+      },
+      {
+        "Peer Name": "WNG Net",
+        "ASN": "131773"
+      },
+      {
+        "Peer Name": "WowNET",
+        "ASN": "138074"
+      },
+      {
+        "Peer Name": "XROUTE",
+        "ASN": "58401"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 1,
+      "totalExchanges": 2,
+      "totalNetworks": 23,
+      "lastUpdated": "2025-09-26T23:05:35Z"
+    },
+    "coordinates": {
+      "lat": -8.655012,
+      "lng": 115.218488
+    }
+  },
+  {
+    "name": "indonesia",
+    "facility": {},
+    "carriers": [],
+    "exchanges": [],
+    "networks": [],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 0,
+      "lastUpdated": null
+    }
+  },
+  {
+    "name": "jatinegara",
+    "facility": {
+      "Name": "neuCentriX - Jatinegara",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "DC neuCentrIX Jatinegara",
+      "Address 2": "Jl. Kober Ulu No.7, RT.11/RW.5, Rw. Bunga, Kecamatan Jatinegara",
+      "Suite": "",
+      "Location": "Jakarta Timur, Jakarta, 13350",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-6.223196, 106.872773",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:55Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [],
+    "networks": [
+      {
+        "Peer Name": "IDNIC-HOSTNETGLOBAL-AS-ID",
+        "ASN": "149662"
+      },
+      {
+        "Peer Name": "Lightstorm Indonesia",
+        "ASN": "150548"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 3,
+      "lastUpdated": "2025-09-26T23:06:55Z"
+    },
+    "coordinates": {
+      "lat": -6.223196,
+      "lng": 106.872773
+    }
+  },
+  {
+    "name": "karettengsin",
+    "facility": {
+      "Name": "neuCentrIX - Karet Tengsin",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "Jl. K.H. Mas Mansyur No.1, RT.13/RW.8,",
+      "Address 2": "Karet Tengsin, Kecamatan Tanah Abang",
+      "Suite": "",
+      "Location": "Jakarta Pusat, DKI Jakarta, 10250",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-6.202663, 106.816077",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T22:57:34Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "noc@telkom.co.id",
+      "Technical Phone": "",
+      "Sales Email": "neucentrix@telkom.co.id",
+      "Sales Phone": "+628118421502",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [
+      {
+        "Carrier": "Matrix NAP Info"
+      }
+    ],
+    "exchanges": [
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      },
+      {
+        "Exchange": "OMNI-IX BATAM",
+        "Long Name": "Omni Internet Exchange",
+        "Networks": "16"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "Abhinawa Sumberdaya Asia - AS138077",
+        "ASN": "138077"
+      },
+      {
+        "Peer Name": "ADNET MEDIA INDONESIA",
+        "ASN": "135439"
+      },
+      {
+        "Peer Name": "ADSNET (ads.net.id)",
+        "ASN": "38165"
+      },
+      {
+        "Peer Name": "Andalan Dinamika Informatika",
+        "ASN": "140470"
+      },
+      {
+        "Peer Name": "Arana Teknologi Indonesia",
+        "ASN": "63497"
+      },
+      {
+        "Peer Name": "Arsenet Global Solusi",
+        "ASN": "58819"
+      },
+      {
+        "Peer Name": "ARTAMEDIA CITRA TELEMATIKA INDONESIA",
+        "ASN": "136861"
+      },
+      {
+        "Peer Name": "Biznet Gio Nusantara",
+        "ASN": "133800"
+      },
+      {
+        "Peer Name": "BT",
+        "ASN": "5400"
+      },
+      {
+        "Peer Name": "CAPOENG",
+        "ASN": "138829"
+      },
+      {
+        "Peer Name": "Comtronics Systems",
+        "ASN": "23949"
+      },
+      {
+        "Peer Name": "CONVERSANTBERHAD-AS-AP",
+        "ASN": "132546"
+      },
+      {
+        "Peer Name": "Cubiespot Pilar Data Nusantara",
+        "ASN": "141126"
+      },
+      {
+        "Peer Name": "Cybertechtonic Pratama AS131745",
+        "ASN": "131745"
+      },
+      {
+        "Peer Name": "DANKOM MITRA ABADI",
+        "ASN": "140007"
+      },
+      {
+        "Peer Name": "DCConnect Communication",
+        "ASN": "151326"
+      },
+      {
+        "Peer Name": "Digital Satellite Indonesia",
+        "ASN": "24538"
+      },
+      {
+        "Peer Name": "DINETKAN",
+        "ASN": "152032"
+      },
+      {
+        "Peer Name": "Eka Mas Republik",
+        "ASN": "63859"
+      },
+      {
+        "Peer Name": "Fiber Networks Indonesia",
+        "ASN": "58369"
+      },
+      {
+        "Peer Name": "FiberStar AS136106",
+        "ASN": "136106"
+      },
+      {
+        "Peer Name": "First Media",
+        "ASN": "23700"
+      },
+      {
+        "Peer Name": "Fivendro Mandiri Indonesia",
+        "ASN": "141910"
+      },
+      {
+        "Peer Name": "Gapura Era Digital",
+        "ASN": "150482"
+      },
+      {
+        "Peer Name": "Global Erasiber Teknologi",
+        "ASN": "147106"
+      },
+      {
+        "Peer Name": "Global Media Pratama Solusindo",
+        "ASN": "138810"
+      },
+      {
+        "Peer Name": "Herza Cloud",
+        "ASN": "140443"
+      },
+      {
+        "Peer Name": "Hipernet Indodata AS38758",
+        "ASN": "38758"
+      },
+      {
+        "Peer Name": "HSPIX",
+        "ASN": "140399"
+      },
+      {
+        "Peer Name": "IDCloudHost",
+        "ASN": "136052"
+      },
+      {
+        "Peer Name": "IDNIC-HOSTNETGLOBAL-AS-ID",
+        "ASN": "149662"
+      },
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "INDONESIA TRANS NETWORK",
+        "ASN": "138881"
+      },
+      {
+        "Peer Name": "Indonet",
+        "ASN": "9340"
+      },
+      {
+        "Peer Name": "Indonusa System Integrator Prima",
+        "ASN": "4382"
+      },
+      {
+        "Peer Name": "Insan Sarana Telematika",
+        "ASN": "24535"
+      },
+      {
+        "Peer Name": "Inter Medialink Solusi",
+        "ASN": "138854"
+      },
+      {
+        "Peer Name": "INTERLINK TECHNOLOGY",
+        "ASN": "45298"
+      },
+      {
+        "Peer Name": "INTERLINK TECHNOLOGY AS9251",
+        "ASN": "9251"
+      },
+      {
+        "Peer Name": "IOSYS Media Data",
+        "ASN": "141056"
+      },
+      {
+        "Peer Name": "Jala Lintas Media AS133840",
+        "ASN": "133840"
+      },
+      {
+        "Peer Name": "Jala Lintas Media AS55685",
+        "ASN": "55685"
+      },
+      {
+        "Peer Name": "Juragan Wifi Indonesia",
+        "ASN": "141073"
+      },
+      {
+        "Peer Name": "Kaopu Cloud HK",
+        "ASN": "138915"
+      },
+      {
+        "Peer Name": "KONNEK JAYA BERSAMA",
+        "ASN": "152435"
+      },
+      {
+        "Peer Name": "Lintas Jaringan Nusantara",
+        "ASN": "58821"
+      },
+      {
+        "Peer Name": "Lintas Network Solusi",
+        "ASN": "150279"
+      },
+      {
+        "Peer Name": "Lintasarta",
+        "ASN": "4800"
+      },
+      {
+        "Peer Name": "Maxindo Mitra Solusi",
+        "ASN": "38320"
+      },
+      {
+        "Peer Name": "Media Antar Nusa",
+        "ASN": "23679"
+      },
+      {
+        "Peer Name": "Media Cepat Indonesia",
+        "ASN": "141137"
+      },
+      {
+        "Peer Name": "Menara Sinar Semesta",
+        "ASN": "133337"
+      },
+      {
+        "Peer Name": "Milenial Inti Telekomunikasi",
+        "ASN": "141898"
+      },
+      {
+        "Peer Name": "Misqot Sejahtera Indonesia",
+        "ASN": "149744"
+      },
+      {
+        "Peer Name": "Mitra Media Data",
+        "ASN": "138866"
+      },
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "Myarsyila Indonesia",
+        "ASN": "147120"
+      },
+      {
+        "Peer Name": "NAP Info Internet",
+        "ASN": "17727"
+      },
+      {
+        "Peer Name": "NAP Info IPTransit",
+        "ASN": "45147"
+      },
+      {
+        "Peer Name": "OMNICLOUD INDONESIA",
+        "ASN": "141109"
+      },
+      {
+        "Peer Name": "PLBNET",
+        "ASN": "139972"
+      },
+      {
+        "Peer Name": "Prima Nala Mandiri",
+        "ASN": "150185"
+      },
+      {
+        "Peer Name": "Primacom Interbuana",
+        "ASN": "133815"
+      },
+      {
+        "Peer Name": "PT Asri Global Investama",
+        "ASN": "151546"
+      },
+      {
+        "Peer Name": "PT Gateway Internet Indonesia",
+        "ASN": "147155"
+      },
+      {
+        "Peer Name": "PT Infratelindo Nusantara Investama",
+        "ASN": "149362"
+      },
+      {
+        "Peer Name": "PT Karya Aneka Persada (HAJINET)",
+        "ASN": "149345"
+      },
+      {
+        "Peer Name": "PT Parsaoran Global Datatrans",
+        "ASN": "58495"
+      },
+      {
+        "Peer Name": "PT Patria Lintas Jaya",
+        "ASN": "139365"
+      },
+      {
+        "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+        "ASN": "45325"
+      },
+      {
+        "Peer Name": "PT RAJASA SINERGI KOMUNIKASI",
+        "ASN": "153895"
+      },
+      {
+        "Peer Name": "PT Sinar Alam Abadi",
+        "ASN": "17440"
+      },
+      {
+        "Peer Name": "PT Terra Sigma Solusi",
+        "ASN": "141887"
+      },
+      {
+        "Peer Name": "PT Threego Technology Indonesia",
+        "ASN": "151552"
+      },
+      {
+        "Peer Name": "PT Vaiotech Lintas Nusantara",
+        "ASN": "142383"
+      },
+      {
+        "Peer Name": "PT. AwanBit Data Indonesia",
+        "ASN": "149364"
+      },
+      {
+        "Peer Name": "PT. Jelajah Kreasi Informatika",
+        "ASN": "151575"
+      },
+      {
+        "Peer Name": "PT. LINTAS DATA TRANS",
+        "ASN": "151522"
+      },
+      {
+        "Peer Name": "PT. MITRA VISIONER PRATAMA",
+        "ASN": "147094"
+      },
+      {
+        "Peer Name": "PT. Power Telecom",
+        "ASN": "24530"
+      },
+      {
+        "Peer Name": "PT. Wifiku Indonesia",
+        "ASN": "59139"
+      },
+      {
+        "Peer Name": "Quantum Tera Network",
+        "ASN": "46023"
+      },
+      {
+        "Peer Name": "Qwords.com",
+        "ASN": "58404"
+      },
+      {
+        "Peer Name": "RACENET",
+        "ASN": "149318"
+      },
+      {
+        "Peer Name": "RackH Lintas Asia AS135636",
+        "ASN": "135636"
+      },
+      {
+        "Peer Name": "Radmila Pratama Multireka",
+        "ASN": "141125"
+      },
+      {
+        "Peer Name": "Remala Abadi",
+        "ASN": "38511"
+      },
+      {
+        "Peer Name": "Ring Media Nusantara",
+        "ASN": "141642"
+      },
+      {
+        "Peer Name": "Saranainsan Mudaselaras",
+        "ASN": "55655"
+      },
+      {
+        "Peer Name": "Satu Akses Indonesia",
+        "ASN": "150921"
+      },
+      {
+        "Peer Name": "SOLNET INDONESIA",
+        "ASN": "138128"
+      },
+      {
+        "Peer Name": "Solusindo Bintang Pratama",
+        "ASN": "38753"
+      },
+      {
+        "Peer Name": "Sumber Data Indonesia NAP",
+        "ASN": "58389"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      },
+      {
+        "Peer Name": "Trans Hybrid Communication",
+        "ASN": "63516"
+      },
+      {
+        "Peer Name": "Varnion Technology",
+        "ASN": "45287"
+      },
+      {
+        "Peer Name": "Victory Network Indonesia",
+        "ASN": "63878"
+      },
+      {
+        "Peer Name": "Wowrack Indonesia",
+        "ASN": "58381"
+      },
+      {
+        "Peer Name": "Yasmin Amanah Media",
+        "ASN": "139967"
+      },
+      {
+        "Peer Name": "Zenlayer Inc",
+        "ASN": "21859"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 1,
+      "totalExchanges": 2,
+      "totalNetworks": 100,
+      "lastUpdated": "2025-09-26T22:57:34Z"
+    },
+    "coordinates": {
+      "lat": -6.202663,
+      "lng": 106.816077
+    }
+  },
+  {
+    "name": "makassar",
+    "facility": {
+      "Name": "neuCentrIX - Makassar Mattoangin",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/en/service/colocation",
+      "Address 1": "DC NeuCentrIX Batu Ampar II Jl. Matoangin,",
+      "Address 2": "",
+      "Suite": "",
+      "Location": "Makassar, Sulawesi Selatan, 90122",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-5.161469, 119.415443",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:56Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [],
+    "networks": [
+      {
+        "Peer Name": "DINETKAN",
+        "ASN": "152032"
+      },
+      {
+        "Peer Name": "LISAR INTERNATIONAL NETWORKING",
+        "ASN": "136820"
+      },
+      {
+        "Peer Name": "Milenial Inti Telekomunikasi",
+        "ASN": "141898"
+      },
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "PT Malfi Karya Berkah",
+        "ASN": "141899"
+      },
+      {
+        "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+        "ASN": "45325"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 7,
+      "lastUpdated": "2025-09-26T23:06:56Z"
+    },
+    "coordinates": {
+      "lat": -5.161469,
+      "lng": 119.415443
+    }
+  },
+  {
+    "name": "malang",
+    "facility": {
+      "Name": "neuCentrIX - Malang",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "Jl. Jenderal Basuki Rahmat No.11 A,",
+      "Address 2": "Kauman, Kec. Klojen",
+      "Suite": "",
+      "Location": "Malang, Jawa Timur, 65119",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-7.980217, 112.629902",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:55Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [],
+    "networks": [
+      {
+        "Peer Name": "Lintasarta",
+        "ASN": "4800"
+      },
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 3,
+      "lastUpdated": "2025-09-26T23:06:55Z"
+    },
+    "coordinates": {
+      "lat": -7.980217,
+      "lng": 112.629902
+    }
+  },
+  {
+    "name": "manado",
+    "facility": {
+      "Name": "neuCentrIX - Manado",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "DC NeuCentrIX Manado",
+      "Address 2": "Jl. Wiratama No. 2",
+      "Suite": "",
+      "Location": "Manado, Sulawesi Utara, 95356",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": ", ",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:56Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [],
+    "networks": [
+      {
+        "Peer Name": "JARTEL",
+        "ASN": "150968"
+      },
+      {
+        "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+        "ASN": "45325"
+      },
+      {
+        "Peer Name": "PT.PC24 Telekomunikasi Indonesia",
+        "ASN": "141142"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia International",
+        "ASN": "58815"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 5,
+      "lastUpdated": "2025-09-26T23:06:56Z"
+    },
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    }
+  },
+  {
+    "name": "medan",
+    "facility": {
+      "Name": "neuCentrIX - Medan",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "neuCentrIX Medan Centrum",
+      "Address 2": "Jl. Prof. H.M Yamin Sh No. 2, Kesawan,",
+      "Suite": "",
+      "Location": "Medan, Sumatera Utara, 20236",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": ", ",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:05:34Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "no@telkom.co.id",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "48 VDC",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "AIL Network",
+        "ASN": "138839"
+      },
+      {
+        "Peer Name": "Andalan Dinamika Informatika",
+        "ASN": "140470"
+      },
+      {
+        "Peer Name": "Argatek Torsada Guna",
+        "ASN": "142315"
+      },
+      {
+        "Peer Name": "Digital Satellite Indonesia",
+        "ASN": "24538"
+      },
+      {
+        "Peer Name": "FiberStar AS136106",
+        "ASN": "136106"
+      },
+      {
+        "Peer Name": "First Media",
+        "ASN": "23700"
+      },
+      {
+        "Peer Name": "Hipernet Indodata AS38758",
+        "ASN": "38758"
+      },
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "Inter Medialink Solusi",
+        "ASN": "138854"
+      },
+      {
+        "Peer Name": "Milenial Inti Telekomunikasi",
+        "ASN": "141898"
+      },
+      {
+        "Peer Name": "PANCA DUTA UTAMA",
+        "ASN": "137316"
+      },
+      {
+        "Peer Name": "PT Infratelindo Nusantara Investama",
+        "ASN": "149362"
+      },
+      {
+        "Peer Name": "PT MMS Digital Communication",
+        "ASN": "153098"
+      },
+      {
+        "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+        "ASN": "45325"
+      },
+      {
+        "Peer Name": "PT Telekomunikasi Internet Indonesia",
+        "ASN": "142332"
+      },
+      {
+        "Peer Name": "PT Terra Sigma Solusi",
+        "ASN": "141887"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 1,
+      "totalNetworks": 17,
+      "lastUpdated": "2025-09-26T23:05:34Z"
+    },
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    }
+  },
+  {
+    "name": "meruya",
+    "facility": {
+      "Name": "neuCentrIX - Meruya",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "neuCentrIX Meruya; Jl. Makam Joglo RT 8,",
+      "Address 2": "Kelurahan, RT.12/RW.3, Joglo, Kembangan, West Jakarta City,",
+      "Suite": "",
+      "Location": "Jakarta, Jakarta, 11640",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-6.217649, 106.75631",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:05:33Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "neucentrix@telkom.co.id",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia",
+        "ASN": "133062"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 1,
+      "totalNetworks": 3,
+      "lastUpdated": "2025-09-26T23:05:33Z"
+    },
+    "coordinates": {
+      "lat": -6.217649,
+      "lng": 106.75631
+    }
+  },
+  {
+    "name": "ncix",
+    "facility": {},
+    "carriers": [],
+    "exchanges": [],
+    "networks": [],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 0,
+      "lastUpdated": null
+    }
+  },
+  {
+    "name": "pekanbaru",
+    "facility": {
+      "Name": "neuCentrIX - Pekanbaru",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "Jl. Jendral Sudirman No.199 Sumahilang",
+      "Address 2": "Pekanbaru Kota",
+      "Suite": "",
+      "Location": "Pekanbaru, Riau, 28111",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "0.524983, 101.448132",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T22:58:42Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "neucentrix.operation@sigma.co.id",
+      "Technical Phone": "",
+      "Sales Email": "neucentrix@telkom.co.id",
+      "Sales Phone": "+6281139002626",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "BertuahIX",
+        "Long Name": "Bertuah Internet Exchange",
+        "Networks": "32"
+      },
+      {
+        "Exchange": "CENTRO-IX",
+        "Long Name": "Centro Internet Exchange",
+        "Networks": "36"
+      },
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "Aditama Netmedia Solusindo",
+        "ASN": "141909"
+      },
+      {
+        "Peer Name": "AKSENT",
+        "ASN": "150460"
+      },
+      {
+        "Peer Name": "BertuahIX Route Servers",
+        "ASN": "150268"
+      },
+      {
+        "Peer Name": "Centronet Data Indonesia",
+        "ASN": "138884"
+      },
+      {
+        "Peer Name": "Chandra Media Nusantara, PT",
+        "ASN": "140423"
+      },
+      {
+        "Peer Name": "Cinoxmedia Network Indonesia",
+        "ASN": "136075"
+      },
+      {
+        "Peer Name": "CMedia Nusantara, CV",
+        "ASN": "152821"
+      },
+      {
+        "Peer Name": "DUMAI MANDIRI NET",
+        "ASN": "134655"
+      },
+      {
+        "Peer Name": "Fiber Networks Indonesia",
+        "ASN": "58369"
+      },
+      {
+        "Peer Name": "GNET BIARO AKSES",
+        "ASN": "131743"
+      },
+      {
+        "Peer Name": "Gogiga Media Teknologi",
+        "ASN": "149335"
+      },
+      {
+        "Peer Name": "IDNIC-SKYNETNETWORKBERSAMA-AS-ID",
+        "ASN": "139934"
+      },
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "Instanet Media Nusantara",
+        "ASN": "141966"
+      },
+      {
+        "Peer Name": "Jaringan Datamedia Nusantara",
+        "ASN": "149693"
+      },
+      {
+        "Peer Name": "M. Alhuda",
+        "ASN": "216375"
+      },
+      {
+        "Peer Name": "Mayatama Solusindo",
+        "ASN": "131769"
+      },
+      {
+        "Peer Name": "Mega Data Akses",
+        "ASN": "142369"
+      },
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "OMNICLOUD INDONESIA",
+        "ASN": "141109"
+      },
+      {
+        "Peer Name": "PT Agung Network Solution",
+        "ASN": "149385"
+      },
+      {
+        "Peer Name": "PT Kuantan Net Akses",
+        "ASN": "150483"
+      },
+      {
+        "Peer Name": "PT. SARANA PEMBANGUNAN SIAK",
+        "ASN": "46045"
+      },
+      {
+        "Peer Name": "PT.GLOBALRIAU DATA SOLUSI",
+        "ASN": "135459"
+      },
+      {
+        "Peer Name": "Shanum Sarana Telekomunikasi",
+        "ASN": "150238"
+      },
+      {
+        "Peer Name": "SOLNET INDONESIA",
+        "ASN": "138128"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      },
+      {
+        "Peer Name": "Wahyu Akses Koneksi Riau",
+        "ASN": "141660"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 3,
+      "totalNetworks": 28,
+      "lastUpdated": "2025-09-26T22:58:42Z"
+    },
+    "coordinates": {
+      "lat": 0.524983,
+      "lng": 101.448132
+    }
+  },
+  {
+    "name": "pontianak",
+    "facility": {
+      "Name": "neuCentrIX - Pontianak",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "DC neuCentrIX Pontianak",
+      "Address 2": "Jl. Teuku Umar No.2",
+      "Suite": "",
+      "Location": "Pontianak, Kalimantan Barat, 78117",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-0.033905, 109.332893",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:55Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [],
+    "networks": [
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 2,
+      "lastUpdated": "2025-09-26T23:06:55Z"
+    },
+    "coordinates": {
+      "lat": -0.033905,
+      "lng": 109.332893
+    }
+  },
+  {
+    "name": "semarang",
+    "facility": {
+      "Name": "neuCentrIX - Semarang",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "http://www.neucentrix.co.id",
+      "Address 1": "Jl. Setia Budi 2 No.150, Kaliwiru, Kec. Candisari, Kota Semarang, Jawa Tengah",
+      "Address 2": "",
+      "Suite": "",
+      "Location": "Semarang, Jawa Tengah, 50232",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-7.019279, 110.419645",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:05:24Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "neucentrix@telkom.co.id",
+      "Technical Phone": "",
+      "Sales Email": "neucentrix@telkom.co.id",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "CitraIX Semarang",
+        "Long Name": "Citranet Internet Exchange Semarang",
+        "Networks": "11"
+      },
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "CANNETWORKS",
+        "ASN": "153077"
+      },
+      {
+        "Peer Name": "CITRANET",
+        "ASN": "23951"
+      },
+      {
+        "Peer Name": "Cubiespot Pilar Data Nusantara",
+        "ASN": "141126"
+      },
+      {
+        "Peer Name": "DataUtama Dinamika, PT",
+        "ASN": "24521"
+      },
+      {
+        "Peer Name": "Digital Satellite Indonesia",
+        "ASN": "24538"
+      },
+      {
+        "Peer Name": "First Media",
+        "ASN": "23700"
+      },
+      {
+        "Peer Name": "Hipernet Indodata AS38758",
+        "ASN": "38758"
+      },
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "INTER KONEKSI MEDIA",
+        "ASN": "142401"
+      },
+      {
+        "Peer Name": "Internet Mulia Untuk Negeri",
+        "ASN": "142360"
+      },
+      {
+        "Peer Name": "Lightstorm Indonesia",
+        "ASN": "150548"
+      },
+      {
+        "Peer Name": "Lintas Jaringan Nusantara",
+        "ASN": "58821"
+      },
+      {
+        "Peer Name": "Maxindo Mitra Solusi",
+        "ASN": "38320"
+      },
+      {
+        "Peer Name": "Milenial Inti Telekomunikasi",
+        "ASN": "141898"
+      },
+      {
+        "Peer Name": "PALAPANET",
+        "ASN": "134630"
+      },
+      {
+        "Peer Name": "PT Airlink Media Data",
+        "ASN": "152401"
+      },
+      {
+        "Peer Name": "PT Applewifi Selalu Lancar",
+        "ASN": "152439"
+      },
+      {
+        "Peer Name": "PT Berkah Media Kusuma Vision",
+        "ASN": "149888"
+      },
+      {
+        "Peer Name": "PT Maejin Karya Media",
+        "ASN": "149891"
+      },
+      {
+        "Peer Name": "PT Muria Global Network",
+        "ASN": "152425"
+      },
+      {
+        "Peer Name": "PT. Selaras Citra Artmedia",
+        "ASN": "149353"
+      },
+      {
+        "Peer Name": "SISTEM INTERKONEKSI DATA",
+        "ASN": "150923"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      },
+      {
+        "Peer Name": "Wahyu Adidaya Network",
+        "ASN": "140469"
+      },
+      {
+        "Peer Name": "WIFIBANTER.NET",
+        "ASN": "150555"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 2,
+      "totalNetworks": 25,
+      "lastUpdated": "2025-09-26T23:05:24Z"
+    },
+    "coordinates": {
+      "lat": -7.019279,
+      "lng": 110.419645
+    }
+  },
+  {
+    "name": "sepaku",
+    "facility": {
+      "Name": "neuCentrIX - Sepaku",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "DC neuCentrIX Sepaku Balikpapan",
+      "Address 2": "Jl. Pattimura No.96",
+      "Suite": "",
+      "Location": "Balikpapan, Kalimantan Timur, 76147",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-1.217321, 116.854011",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:56Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [],
+    "networks": [
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 1,
+      "lastUpdated": "2025-09-26T23:06:56Z"
+    },
+    "coordinates": {
+      "lat": -1.217321,
+      "lng": 116.854011
+    }
+  },
+  {
+    "name": "surabayagubeng",
+    "facility": {
+      "Name": "neuCentrIX - Surabaya Gubeng",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "Jl. Sumatera No.131",
+      "Address 2": "Kec. Gubeng",
+      "Suite": "",
+      "Location": "Surabaya, Jawa Timur, 60281",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-7.2762, 112.745216",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T22:57:34Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "stardc@telkomhosting.com",
+      "Technical Phone": "+62315013434",
+      "Sales Email": "neucentrix@telkom.co.id",
+      "Sales Phone": "+628118421502",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "Abhinawa Sumberdaya Asia - AS138077",
+        "ASN": "138077"
+      },
+      {
+        "Peer Name": "ADSNET (ads.net.id)",
+        "ASN": "38165"
+      },
+      {
+        "Peer Name": "APEX Network - JT",
+        "ASN": "153327"
+      },
+      {
+        "Peer Name": "CAPOENG",
+        "ASN": "138829"
+      },
+      {
+        "Peer Name": "CIPTA TRIMETIKA",
+        "ASN": "139405"
+      },
+      {
+        "Peer Name": "Cubiespot Pilar Data Nusantara",
+        "ASN": "141126"
+      },
+      {
+        "Peer Name": "Digital Satellite Indonesia",
+        "ASN": "24538"
+      },
+      {
+        "Peer Name": "Era Network Indonesia",
+        "ASN": "152429"
+      },
+      {
+        "Peer Name": "Fiber Networks Indonesia",
+        "ASN": "58369"
+      },
+      {
+        "Peer Name": "FiberStar AS136106",
+        "ASN": "136106"
+      },
+      {
+        "Peer Name": "Garuda Media Telematika",
+        "ASN": "136874"
+      },
+      {
+        "Peer Name": "Gayatri Lintas Nusantara",
+        "ASN": "141607"
+      },
+      {
+        "Peer Name": "Herza Cloud",
+        "ASN": "140443"
+      },
+      {
+        "Peer Name": "Hipernet Indodata AS38758",
+        "ASN": "38758"
+      },
+      {
+        "Peer Name": "IdeaNet",
+        "ASN": "140482"
+      },
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "Indonusa System Integrator Prima",
+        "ASN": "4382"
+      },
+      {
+        "Peer Name": "Inovasi Tjaraka Buana",
+        "ASN": "63885"
+      },
+      {
+        "Peer Name": "Internet Ini Saja",
+        "ASN": "138818"
+      },
+      {
+        "Peer Name": "Inti Data Telematika",
+        "ASN": "133817"
+      },
+      {
+        "Peer Name": "Jala Lintas Media AS55685",
+        "ASN": "55685"
+      },
+      {
+        "Peer Name": "Lexxa Data Indonusa",
+        "ASN": "139428"
+      },
+      {
+        "Peer Name": "Lintas Data Prima",
+        "ASN": "45305"
+      },
+      {
+        "Peer Name": "Lintas Jaringan Nusantara",
+        "ASN": "58821"
+      },
+      {
+        "Peer Name": "Maxindo Mitra Solusi",
+        "ASN": "38320"
+      },
+      {
+        "Peer Name": "Media Antar Nusa",
+        "ASN": "23679"
+      },
+      {
+        "Peer Name": "MEGADATA-ISP",
+        "ASN": "136873"
+      },
+      {
+        "Peer Name": "Menaksopal Link Nusantara",
+        "ASN": "139981"
+      },
+      {
+        "Peer Name": "Milenial Inti Telekomunikasi",
+        "ASN": "141898"
+      },
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "MyRise AS141140",
+        "ASN": "141140"
+      },
+      {
+        "Peer Name": "Pratama Hasta Utama Solusindo",
+        "ASN": "142352"
+      },
+      {
+        "Peer Name": "PT BLiP Integrator Provider",
+        "ASN": "149746"
+      },
+      {
+        "Peer Name": "PT Media Sarana Data (GMEDIA)",
+        "ASN": "55666"
+      },
+      {
+        "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+        "ASN": "45325"
+      },
+      {
+        "Peer Name": "PT Sinar Alam Abadi",
+        "ASN": "17440"
+      },
+      {
+        "Peer Name": "PT. MITRA VISIONER PRATAMA",
+        "ASN": "147094"
+      },
+      {
+        "Peer Name": "Rasi Bintang Perkasa",
+        "ASN": "138109"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      },
+      {
+        "Peer Name": "TERABIT",
+        "ASN": "131706"
+      },
+      {
+        "Peer Name": "Trans Hybrid Communication",
+        "ASN": "63516"
+      },
+      {
+        "Peer Name": "WowNET",
+        "ASN": "138074"
+      },
+      {
+        "Peer Name": "Wowrack Indonesia",
+        "ASN": "58381"
+      },
+      {
+        "Peer Name": "Yasmin Amanah Media",
+        "ASN": "139967"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 1,
+      "totalNetworks": 44,
+      "lastUpdated": "2025-09-26T22:57:34Z"
+    },
+    "coordinates": {
+      "lat": -7.2762,
+      "lng": 112.745216
+    }
+  },
+  {
+    "name": "surabayakebalen",
+    "facility": {
+      "Name": "neuCentrIX - Surabaya Kebalen",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "DC NeuCentrIX Surabaya Kebalen",
+      "Address 2": "Jl. Kalisosok Dapuan Bend. Gg. I No.12",
+      "Suite": "",
+      "Location": "Surabaya, Jawa Timur, 60175",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-7.229522, 112.735092",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:55Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [],
+    "networks": [
+      {
+        "Peer Name": "Kaopu Cloud HK",
+        "ASN": "138915"
+      },
+      {
+        "Peer Name": "MITRA VISIONER PRATAMA",
+        "ASN": "64315"
+      },
+      {
+        "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+        "ASN": "45325"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 4,
+      "lastUpdated": "2025-09-26T23:06:55Z"
+    },
+    "coordinates": {
+      "lat": -7.229522,
+      "lng": 112.735092
+    }
+  },
+  {
+    "name": "talangkelapa",
+    "facility": {
+      "Name": "neuCentriX - Talang Kelapa",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "DC neuCentrIX Talang Kalapa",
+      "Address 2": "Jl. Kol. H Burlian No.419 KM.7",
+      "Suite": "",
+      "Location": "Palembang, Palembang, 30151",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-2.951902, 104.734148",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:54Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "JDX",
+        "Long Name": "JDX Internet Exchange",
+        "Networks": "1"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "Hipernet Indodata AS38758",
+        "ASN": "38758"
+      },
+      {
+        "Peer Name": "MEGADATA-ISP",
+        "ASN": "136873"
+      },
+      {
+        "Peer Name": "PT Telemedia Prima Nusantara - AS153087",
+        "ASN": "153087"
+      },
+      {
+        "Peer Name": "PT. KREATIF GLOBAL SOLUSINDO",
+        "ASN": "140467"
+      },
+      {
+        "Peer Name": "SPM-AS-ID",
+        "ASN": "38761"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 1,
+      "totalNetworks": 5,
+      "lastUpdated": "2025-09-26T23:06:54Z"
+    },
+    "coordinates": {
+      "lat": -2.951902,
+      "lng": 104.734148
+    }
+  },
+  {
+    "name": "tanjungkarang",
+    "facility": {
+      "Name": "neuCentrIX - Tanjung Karang",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "Jl. Kartini No.1",
+      "Address 2": "",
+      "Suite": "",
+      "Location": "Bandar Lampung, Lampung, 35127",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-5.409079, 105.257379",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:06:54Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [],
+    "networks": [],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 0,
+      "totalNetworks": 0,
+      "lastUpdated": "2025-09-26T23:06:54Z"
+    },
+    "coordinates": {
+      "lat": -5.409079,
+      "lng": 105.257379
+    }
+  },
+  {
+    "name": "ulin",
+    "facility": {
+      "Name": "neuCentrIX - Ulin",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "https://www.neucentrix.co.id/",
+      "Address 1": "neuCentrIX Banjarmasin Ulin; Kota Banjarmasin",
+      "Address 2": "Jalan Ahmad Yani no. 62, kec Banjarmasin Timur",
+      "Suite": "",
+      "Location": "Banjarmasin, Kalimantan Selatan, 70234",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": "-3.337613, 114.617483",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:05:34Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "noc@telkom.co.id",
+      "Technical Phone": "",
+      "Sales Email": "",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [],
+    "exchanges": [
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "FiberStar AS136106",
+        "ASN": "136106"
+      },
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "MEGADATA-ISP",
+        "ASN": "136873"
+      },
+      {
+        "Peer Name": "Mitra Lintas Multimedia",
+        "ASN": "136093"
+      },
+      {
+        "Peer Name": "PT.COMTELINDO",
+        "ASN": "136054"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 0,
+      "totalExchanges": 1,
+      "totalNetworks": 5,
+      "lastUpdated": "2025-09-26T23:05:34Z"
+    },
+    "coordinates": {
+      "lat": -3.337613,
+      "lng": 114.617483
+    }
+  },
+  {
+    "name": "yogyakarta",
+    "facility": {
+      "Name": "neuCentrIX - Yogyakarta Kota Baru",
+      "Organization": "PT Telekomunikasi Indonesia Int",
+      "Also Known As": "",
+      "Long Name": "",
+      "Company Website": "http://www.telkom.co.id",
+      "Address 1": "Kotabaru, Kec. Gondokusuman, Kota Yogyakarta",
+      "Address 2": "",
+      "Suite": "",
+      "Location": "Yogyakarta, , 55224",
+      "Country Code": "ID",
+      "Continental Region": "Asia Pacific",
+      "Geocode": ", ",
+      "CLLI Code": "",
+      "NPA-NXX": "",
+      "Last Updated": "2025-09-26T23:01:19Z",
+      "Notes": "",
+      "Logo": "",
+      "Technical Email": "noc@telkom.co.id",
+      "Technical Phone": "",
+      "Sales Email": "noc@telkom.co.id",
+      "Sales Phone": "",
+      "Property": "",
+      "Diverse Serving Substations": "Not Disclosed",
+      "Available Voltage Services": "",
+      "Health Check": ""
+    },
+    "carriers": [
+      {
+        "Carrier": "CANNETWORKS"
+      }
+    ],
+    "exchanges": [
+      {
+        "Exchange": "CitraIX Yogyakarta",
+        "Long Name": "Citranet Internet Exchange Yogyakarta",
+        "Networks": "61"
+      },
+      {
+        "Exchange": "NCIX - neuCentrIX",
+        "Long Name": "neuCentrIX Internet Exchange",
+        "Networks": "63"
+      },
+      {
+        "Exchange": "UNY-IX",
+        "Long Name": "Universitas Negeri Yogyakarta Internet Exchange Point",
+        "Networks": "35"
+      }
+    ],
+    "networks": [
+      {
+        "Peer Name": "ADEAKSA INDO JAYATAMA",
+        "ASN": "138123"
+      },
+      {
+        "Peer Name": "AYONET",
+        "ASN": "138860"
+      },
+      {
+        "Peer Name": "CANNETWORKS",
+        "ASN": "153077"
+      },
+      {
+        "Peer Name": "CitraIX Route Servers",
+        "ASN": "58500"
+      },
+      {
+        "Peer Name": "CITRANET",
+        "ASN": "23951"
+      },
+      {
+        "Peer Name": "Citraweb Digital Multisolusi",
+        "ASN": "138069"
+      },
+      {
+        "Peer Name": "DEKADATA",
+        "ASN": "149369"
+      },
+      {
+        "Peer Name": "DES Teknologi Informasi",
+        "ASN": "45302"
+      },
+      {
+        "Peer Name": "DINAMIKA MEDIAKOM",
+        "ASN": "63508"
+      },
+      {
+        "Peer Name": "Global Media Data Prima",
+        "ASN": "138089"
+      },
+      {
+        "Peer Name": "Globus Melia Indotama",
+        "ASN": "142305"
+      },
+      {
+        "Peer Name": "Indonesia neuCentrIX",
+        "ASN": "137019"
+      },
+      {
+        "Peer Name": "Jaringan VNT Indonesia",
+        "ASN": "59278"
+      },
+      {
+        "Peer Name": "Jinom Network Indonesia",
+        "ASN": "138064"
+      },
+      {
+        "Peer Name": "Lintas Data Prima",
+        "ASN": "45305"
+      },
+      {
+        "Peer Name": "Lintasarta",
+        "ASN": "4800"
+      },
+      {
+        "Peer Name": "MEGADATA-ISP",
+        "ASN": "136873"
+      },
+      {
+        "Peer Name": "OptiCore+",
+        "ASN": "141664"
+      },
+      {
+        "Peer Name": "PT Media Sarana Akses",
+        "ASN": "38760"
+      },
+      {
+        "Peer Name": "PT Media Sarana Data (GMEDIA)",
+        "ASN": "55666"
+      },
+      {
+        "Peer Name": "PT Tunas Media Data",
+        "ASN": "151567"
+      },
+      {
+        "Peer Name": "Ring Media Nusantara",
+        "ASN": "141642"
+      },
+      {
+        "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+        "ASN": "7713"
+      },
+      {
+        "Peer Name": "TERABIT",
+        "ASN": "131706"
+      },
+      {
+        "Peer Name": "Tonggak Teknologi Netikom",
+        "ASN": "140481"
+      },
+      {
+        "Peer Name": "Union Routelink Communication",
+        "ASN": "38156"
+      },
+      {
+        "Peer Name": "Universitas Negeri Yogyakarta",
+        "ASN": "55674"
+      },
+      {
+        "Peer Name": "Wifikita",
+        "ASN": "140479"
+      }
+    ],
+    "metadata": {
+      "totalCarriers": 1,
+      "totalExchanges": 3,
+      "totalNetworks": 28,
+      "lastUpdated": "2025-09-26T23:01:19Z"
+    },
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    }
+  }
+]

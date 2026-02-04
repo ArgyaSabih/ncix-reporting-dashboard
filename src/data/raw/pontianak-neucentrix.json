@@ -1,0 +1,41 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Pontianak",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "DC neuCentrIX Pontianak",
+    "Address 2": "Jl. Teuku Umar No.2",
+    "Suite": "",
+    "Location": "Pontianak, Kalimantan Barat, 78117",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-0.033905, 109.332893",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:06:55Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "",
+    "Technical Phone": "",
+    "Sales Email": "",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [],
+  "Networks": [
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "ASN": "64315"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    }
+  ]
+}

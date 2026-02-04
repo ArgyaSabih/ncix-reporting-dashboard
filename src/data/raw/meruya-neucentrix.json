@@ -1,0 +1,51 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Meruya",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "neuCentrIX Meruya; Jl. Makam Joglo RT 8,",
+    "Address 2": "Kelurahan, RT.12/RW.3, Joglo, Kembangan, West Jakarta City,",
+    "Suite": "",
+    "Location": "Jakarta, Jakarta, 11640",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-6.217649, 106.75631",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:05:33Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "",
+    "Technical Phone": "",
+    "Sales Email": "neucentrix@telkom.co.id",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "Indonesia neuCentrIX",
+      "ASN": "137019"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia",
+      "ASN": "133062"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    }
+  ]
+}

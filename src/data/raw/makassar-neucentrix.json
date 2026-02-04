@@ -1,0 +1,61 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Makassar Mattoangin",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/en/service/colocation",
+    "Address 1": "DC NeuCentrIX Batu Ampar II Jl. Matoangin,",
+    "Address 2": "",
+    "Suite": "",
+    "Location": "Makassar, Sulawesi Selatan, 90122",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-5.161469, 119.415443",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:06:56Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "",
+    "Technical Phone": "",
+    "Sales Email": "",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [],
+  "Networks": [
+    {
+      "Peer Name": "DINETKAN",
+      "ASN": "152032"
+    },
+    {
+      "Peer Name": "LISAR INTERNATIONAL NETWORKING",
+      "ASN": "136820"
+    },
+    {
+      "Peer Name": "Milenial Inti Telekomunikasi",
+      "ASN": "141898"
+    },
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "ASN": "64315"
+    },
+    {
+      "Peer Name": "PT Malfi Karya Berkah",
+      "ASN": "141899"
+    },
+    {
+      "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+      "ASN": "45325"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    }
+  ]
+}

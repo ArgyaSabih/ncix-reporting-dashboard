@@ -1,0 +1,267 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Bandung",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "http://www.telkom.co.id",
+    "Address 1": "neuCentrIX Lembong; Jl. Lembong No.11, Braga,",
+    "Address 2": "Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40111",
+    "Suite": "",
+    "Location": "Kota Bandung, Jawa Barat, 40111",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-6.916764, 107.611376",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T22:57:51Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "noc@telkom.co.id",
+    "Technical Phone": "",
+    "Sales Email": "noc@telkom.co.id",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "ADSNET (ads.net.id)",
+      "ASN": "38165"
+    },
+    {
+      "Peer Name": "AFNALINK",
+      "ASN": "149723"
+    },
+    {
+      "Peer Name": "ARIF_AWALUDIN",
+      "ASN": "211338"
+    },
+    {
+      "Peer Name": "Arjuna Global Teknologi Indonesia",
+      "ASN": "135480"
+    },
+    {
+      "Peer Name": "Artha Media Lintas Nusa",
+      "ASN": "63490"
+    },
+    {
+      "Peer Name": "Atharva",
+      "ASN": "150249"
+    },
+    {
+      "Peer Name": "BITSNETID",
+      "ASN": "132637"
+    },
+    {
+      "Peer Name": "Citra Jelajah Informatika",
+      "ASN": "131717"
+    },
+    {
+      "Peer Name": "Comtronics Systems",
+      "ASN": "23949"
+    },
+    {
+      "Peer Name": "DINAMIKA MEDIAKOM",
+      "ASN": "63508"
+    },
+    {
+      "Peer Name": "DINETKAN",
+      "ASN": "152032"
+    },
+    {
+      "Peer Name": "FIBERCONNECT.ID",
+      "ASN": "142310"
+    },
+    {
+      "Peer Name": "First Media",
+      "ASN": "23700"
+    },
+    {
+      "Peer Name": "Global Erasiber Teknologi",
+      "ASN": "147106"
+    },
+    {
+      "Peer Name": "Globalnet Multi Data",
+      "ASN": "132669"
+    },
+    {
+      "Peer Name": "Hanasta Dakara",
+      "ASN": "24527"
+    },
+    {
+      "Peer Name": "Hayat Teknologi Informatika",
+      "ASN": "142375"
+    },
+    {
+      "Peer Name": "Hipernet Indodata AS38758",
+      "ASN": "38758"
+    },
+    {
+      "Peer Name": "Indonesia neuCentrIX",
+      "ASN": "137019"
+    },
+    {
+      "Peer Name": "Inovasi Tjaraka Buana",
+      "ASN": "63885"
+    },
+    {
+      "Peer Name": "Internet Ini Saja",
+      "ASN": "138818"
+    },
+    {
+      "Peer Name": "IOSYS Media Data",
+      "ASN": "141056"
+    },
+    {
+      "Peer Name": "Jembatan Data Pangrango",
+      "ASN": "141071"
+    },
+    {
+      "Peer Name": "Jujur Amanah Barokah",
+      "ASN": "149971"
+    },
+    {
+      "Peer Name": "Lintas Jaringan Nusantara",
+      "ASN": "58821"
+    },
+    {
+      "Peer Name": "Lintas Network Solusi",
+      "ASN": "150279"
+    },
+    {
+      "Peer Name": "MAINTEK",
+      "ASN": "153131"
+    },
+    {
+      "Peer Name": "Media Antar Nusa",
+      "ASN": "23679"
+    },
+    {
+      "Peer Name": "Media Cepat Indonesia",
+      "ASN": "141137"
+    },
+    {
+      "Peer Name": "MELSA",
+      "ASN": "9657"
+    },
+    {
+      "Peer Name": "Milenial Inti Telekomunikasi",
+      "ASN": "141898"
+    },
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "ASN": "64315"
+    },
+    {
+      "Peer Name": "MLINK.ID",
+      "ASN": "149365"
+    },
+    {
+      "Peer Name": "Myarsyila Indonesia",
+      "ASN": "147120"
+    },
+    {
+      "Peer Name": "PLBNET",
+      "ASN": "139972"
+    },
+    {
+      "Peer Name": "PRIMABANANEN",
+      "ASN": "133535"
+    },
+    {
+      "Peer Name": "PT CEMERLANG INTERNET INDONESIA",
+      "ASN": "152764"
+    },
+    {
+      "Peer Name": "PT Gateway Internet Indonesia",
+      "ASN": "147155"
+    },
+    {
+      "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+      "ASN": "45325"
+    },
+    {
+      "Peer Name": "PT RAJASA SINERGI KOMUNIKASI",
+      "ASN": "153895"
+    },
+    {
+      "Peer Name": "PT TASKA SARANA NUSANTARA",
+      "ASN": "152775"
+    },
+    {
+      "Peer Name": "PT Vaiotech Lintas Nusantara",
+      "ASN": "142383"
+    },
+    {
+      "Peer Name": "PT. FORIT ASTA SOLUSINDO",
+      "ASN": "139993"
+    },
+    {
+      "Peer Name": "PT. LINTAS DATA TRANS",
+      "ASN": "151522"
+    },
+    {
+      "Peer Name": "PT. MITRA VISIONER PRATAMA",
+      "ASN": "147094"
+    },
+    {
+      "Peer Name": "PT.PC24 Telekomunikasi Indonesia",
+      "ASN": "141142"
+    },
+    {
+      "Peer Name": "Radmila Pratama Multireka",
+      "ASN": "141125"
+    },
+    {
+      "Peer Name": "Ring Media Nusantara",
+      "ASN": "141642"
+    },
+    {
+      "Peer Name": "Skyline Semesta",
+      "ASN": "55653"
+    },
+    {
+      "Peer Name": "Smart Teknologi Utama",
+      "ASN": "141077"
+    },
+    {
+      "Peer Name": "Solusindo Bintang Pratama",
+      "ASN": "38753"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    },
+    {
+      "Peer Name": "TERABIT",
+      "ASN": "131706"
+    },
+    {
+      "Peer Name": "Trans Hybrid Communication",
+      "ASN": "63516"
+    },
+    {
+      "Peer Name": "Wahyu Adidaya Network",
+      "ASN": "140469"
+    },
+    {
+      "Peer Name": "WIFIBANTER.NET",
+      "ASN": "150555"
+    },
+    {
+      "Peer Name": "Yasmin Amanah Media",
+      "ASN": "139967"
+    }
+  ]
+}

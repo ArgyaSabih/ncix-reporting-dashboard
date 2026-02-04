@@ -1,0 +1,140 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Denpasar Kaliasem",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "http://www.neucentrix.co.id",
+    "Address 1": "DC NeuCentrIX Kaliasem",
+    "Address 2": "Jl. Kaliasem No. 5, Dangin Puri Kauh,",
+    "Suite": "",
+    "Location": "Denpasar, Bali, 80232",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-8.655012, 115.218488",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:05:35Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "",
+    "Technical Phone": "",
+    "Sales Email": "",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [
+    {
+      "Carrier": "DETELNETWORKS"
+    }
+  ],
+  "Exchanges": [
+    {
+      "Exchange": "CXC Denpasar",
+      "Long Name": "CLOUDXCHANGE",
+      "Networks": "55"
+    },
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "Alam Daur Nusantara",
+      "ASN": "150913"
+    },
+    {
+      "Peer Name": "Andira Infomedia",
+      "ASN": "55690"
+    },
+    {
+      "Peer Name": "ARTAMEDIA CITRA TELEMATIKA INDONESIA",
+      "ASN": "136861"
+    },
+    {
+      "Peer Name": "DETELNET",
+      "ASN": "58396"
+    },
+    {
+      "Peer Name": "DINETKAN",
+      "ASN": "152032"
+    },
+    {
+      "Peer Name": "Gayatri Lintas Nusantara",
+      "ASN": "141607"
+    },
+    {
+      "Peer Name": "GlobalXtreme",
+      "ASN": "45701"
+    },
+    {
+      "Peer Name": "Hipernet Indodata AS38758",
+      "ASN": "38758"
+    },
+    {
+      "Peer Name": "Inovasi Tjaraka Buana",
+      "ASN": "63885"
+    },
+    {
+      "Peer Name": "Lintas Jaringan Nusantara",
+      "ASN": "58821"
+    },
+    {
+      "Peer Name": "Milenial Inti Telekomunikasi",
+      "ASN": "141898"
+    },
+    {
+      "Peer Name": "MITRA TELEMEDIA MANUNGGAL",
+      "ASN": "136841"
+    },
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "ASN": "64315"
+    },
+    {
+      "Peer Name": "PT BLiP Integrator Provider",
+      "ASN": "149746"
+    },
+    {
+      "Peer Name": "PT Zinet Media Nusantara",
+      "ASN": "152081"
+    },
+    {
+      "Peer Name": "PT. Andal Berjaya Infomedia",
+      "ASN": "141920"
+    },
+    {
+      "Peer Name": "PT. MITRA VISIONER PRATAMA",
+      "ASN": "147094"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    },
+    {
+      "Peer Name": "Tonggak Teknologi Netikom",
+      "ASN": "140481"
+    },
+    {
+      "Peer Name": "Varnion Technology",
+      "ASN": "45287"
+    },
+    {
+      "Peer Name": "WNG Net",
+      "ASN": "131773"
+    },
+    {
+      "Peer Name": "WowNET",
+      "ASN": "138074"
+    },
+    {
+      "Peer Name": "XROUTE",
+      "ASN": "58401"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Balikpapan Batu Ampar",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "neuCentrIX Batuampar; Jl. MT Haryono No. 169",
+    "Address 2": "",
+    "Suite": "",
+    "Location": "Balikpapan, Kalimantan Timur, 76136",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-1.220361, 116.861696",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:05:34Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "noc@telkom.co.id",
+    "Technical Phone": "",
+    "Sales Email": "",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "ADIZKA LINTAS DATA",
+      "ASN": "138887"
+    },
+    {
+      "Peer Name": "GlobalXtreme",
+      "ASN": "45701"
+    },
+    {
+      "Peer Name": "Hipernet Indodata AS38758",
+      "ASN": "38758"
+    },
+    {
+      "Peer Name": "Inti Data Telematika",
+      "ASN": "133817"
+    },
+    {
+      "Peer Name": "LAJANET",
+      "ASN": "141957"
+    },
+    {
+      "Peer Name": "Milenial Inti Telekomunikasi",
+      "ASN": "141898"
+    },
+    {
+      "Peer Name": "Primacom Interbuana",
+      "ASN": "133815"
+    },
+    {
+      "Peer Name": "PT Media Sarana Data (GMEDIA)",
+      "ASN": "55666"
+    },
+    {
+      "Peer Name": "PT Patria Lintas Jaya",
+      "ASN": "139365"
+    },
+    {
+      "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+      "ASN": "45325"
+    },
+    {
+      "Peer Name": "PT.COMTELINDO",
+      "ASN": "136054"
+    },
+    {
+      "Peer Name": "Satnetcom Balikpapan",
+      "ASN": "24204"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    }
+  ]
+}

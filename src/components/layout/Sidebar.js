@@ -1,15 +1,28 @@
+"use client";
+
 import Link from "next/link";
 import LayerToggle from "../dashboard/LayerToggle";
 
-const Sidebar = () => {
+const Sidebar = ({activeLayer, onLayerChange, viewMode, onViewModeChange}) => {
   return (
-    <div className="w-1/4 flex h-full gap-20 flex-col border border-black ml-6 p-4 rounded-sm">
-      <LayerToggle />
-      <Link href="">
-        <button className=" w-full h-12 bg-[#AC0505] flex justify-center items-center rounded-lg">
-          Upload Data
-        </button>
-      </Link>
+    <div
+      className="w-64 flex flex-col border border-slate-300 p-5 rounded-md bg-white"
+      style={{minHeight: "600px"}}
+    >
+      <LayerToggle
+        activeLayer={activeLayer}
+        onLayerChange={onLayerChange}
+        viewMode={viewMode}
+        onViewModeChange={onViewModeChange}
+      />
+
+      <div className="mt-auto">
+        <Link href="/upload">
+          <button className="w-full h-11 bg-[#AC0505] hover:bg-[#8B0404] text-white font-medium flex justify-center cursor-pointer items-center rounded transition-colors">
+            Upload Data
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

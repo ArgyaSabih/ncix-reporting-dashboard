@@ -1,0 +1,59 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Ulin",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "neuCentrIX Banjarmasin Ulin; Kota Banjarmasin",
+    "Address 2": "Jalan Ahmad Yani no. 62, kec Banjarmasin Timur",
+    "Suite": "",
+    "Location": "Banjarmasin, Kalimantan Selatan, 70234",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-3.337613, 114.617483",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:05:34Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "noc@telkom.co.id",
+    "Technical Phone": "",
+    "Sales Email": "",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "FiberStar AS136106",
+      "ASN": "136106"
+    },
+    {
+      "Peer Name": "Indonesia neuCentrIX",
+      "ASN": "137019"
+    },
+    {
+      "Peer Name": "MEGADATA-ISP",
+      "ASN": "136873"
+    },
+    {
+      "Peer Name": "Mitra Lintas Multimedia",
+      "ASN": "136093"
+    },
+    {
+      "Peer Name": "PT.COMTELINDO",
+      "ASN": "136054"
+    }
+  ]
+}

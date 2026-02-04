@@ -1,0 +1,144 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Semarang",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "http://www.neucentrix.co.id",
+    "Address 1": "Jl. Setia Budi 2 No.150, Kaliwiru, Kec. Candisari, Kota Semarang, Jawa Tengah",
+    "Address 2": "",
+    "Suite": "",
+    "Location": "Semarang, Jawa Tengah, 50232",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "-7.019279, 110.419645",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T23:05:24Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "neucentrix@telkom.co.id",
+    "Technical Phone": "",
+    "Sales Email": "neucentrix@telkom.co.id",
+    "Sales Phone": "",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [
+    {
+      "Exchange": "CitraIX Semarang",
+      "Long Name": "Citranet Internet Exchange Semarang",
+      "Networks": "11"
+    },
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "CANNETWORKS",
+      "ASN": "153077"
+    },
+    {
+      "Peer Name": "CITRANET",
+      "ASN": "23951"
+    },
+    {
+      "Peer Name": "Cubiespot Pilar Data Nusantara",
+      "ASN": "141126"
+    },
+    {
+      "Peer Name": "DataUtama Dinamika, PT",
+      "ASN": "24521"
+    },
+    {
+      "Peer Name": "Digital Satellite Indonesia",
+      "ASN": "24538"
+    },
+    {
+      "Peer Name": "First Media",
+      "ASN": "23700"
+    },
+    {
+      "Peer Name": "Hipernet Indodata AS38758",
+      "ASN": "38758"
+    },
+    {
+      "Peer Name": "Indonesia neuCentrIX",
+      "ASN": "137019"
+    },
+    {
+      "Peer Name": "INTER KONEKSI MEDIA",
+      "ASN": "142401"
+    },
+    {
+      "Peer Name": "Internet Mulia Untuk Negeri",
+      "ASN": "142360"
+    },
+    {
+      "Peer Name": "Lightstorm Indonesia",
+      "ASN": "150548"
+    },
+    {
+      "Peer Name": "Lintas Jaringan Nusantara",
+      "ASN": "58821"
+    },
+    {
+      "Peer Name": "Maxindo Mitra Solusi",
+      "ASN": "38320"
+    },
+    {
+      "Peer Name": "Milenial Inti Telekomunikasi",
+      "ASN": "141898"
+    },
+    {
+      "Peer Name": "PALAPANET",
+      "ASN": "134630"
+    },
+    {
+      "Peer Name": "PT Airlink Media Data",
+      "ASN": "152401"
+    },
+    {
+      "Peer Name": "PT Applewifi Selalu Lancar",
+      "ASN": "152439"
+    },
+    {
+      "Peer Name": "PT Berkah Media Kusuma Vision",
+      "ASN": "149888"
+    },
+    {
+      "Peer Name": "PT Maejin Karya Media",
+      "ASN": "149891"
+    },
+    {
+      "Peer Name": "PT Muria Global Network",
+      "ASN": "152425"
+    },
+    {
+      "Peer Name": "PT. Selaras Citra Artmedia",
+      "ASN": "149353"
+    },
+    {
+      "Peer Name": "SISTEM INTERKONEKSI DATA",
+      "ASN": "150923"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    },
+    {
+      "Peer Name": "Wahyu Adidaya Network",
+      "ASN": "140469"
+    },
+    {
+      "Peer Name": "WIFIBANTER.NET",
+      "ASN": "150555"
+    }
+  ]
+}

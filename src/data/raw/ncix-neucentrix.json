@@ -1,0 +1,662 @@
+{
+  "Exchange": {
+    "Name": "NCIX - neuCentrIX",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "NCIX - neuCentrIX",
+    "Long Name": "neuCentrIX Internet Exchange",
+    "City": "Jakarta",
+    "Country": "ID",
+    "Continental Region": "Asia Pacific",
+    "Service Level": "24/7 Support",
+    "Terms": "Not Disclosed",
+    "Last Updated": "2024-05-30T02:03:18Z",
+    "Notes": "",
+    "Logo": "",
+    "Contact Information": "",
+    "Company Website": "https://www.neucentrix.co.id",
+    "Traffic Stats Website": "https://www.neucentrix.co.id",
+    "Technical Email": "noc@telkom.co.id",
+    "Technical Phone": "",
+    "Policy Email": "",
+    "Policy Phone": "",
+    "Sales Email": "",
+    "Sales Phone": "",
+    "Health Check": "",
+    "LAN": "1500"
+  },
+  "Prefixes": [
+    {
+      "Protocol": "IPv4",
+      "Prefix": "36.91.199.0/24"
+    },
+    {
+      "Protocol": "IPv4",
+      "Prefix": "36.91.197.0/24"
+    },
+    {
+      "Protocol": "IPv4",
+      "Prefix": "36.91.198.0/24"
+    }
+  ],
+  "Local Facilities": [
+    {
+      "Facility": "Hyperscale Data Center (HDC)",
+      "Country": "Indonesia",
+      "City": "Kabupaten Bekasi"
+    },
+    {
+      "Facility": "neuCentrIX - Balikpapan Batu Ampar",
+      "Country": "Indonesia",
+      "City": "Balikpapan"
+    },
+    {
+      "Facility": "neuCentrIX - Bandung",
+      "Country": "Indonesia",
+      "City": "Kota Bandung"
+    },
+    {
+      "Facility": "neuCentrIX - Batam",
+      "Country": "Indonesia",
+      "City": "Batam"
+    },
+    {
+      "Facility": "neuCentrIX - Denpasar Kaliasem",
+      "Country": "Indonesia",
+      "City": "Denpasar"
+    },
+    {
+      "Facility": "neuCentrIX - Karet Tengsin",
+      "Country": "Indonesia",
+      "City": "Jakarta Pusat"
+    },
+    {
+      "Facility": "neuCentrIX - Medan",
+      "Country": "Indonesia",
+      "City": "Medan"
+    },
+    {
+      "Facility": "neuCentrIX - Meruya",
+      "Country": "Indonesia",
+      "City": "Jakarta"
+    },
+    {
+      "Facility": "neuCentrIX - Pekanbaru",
+      "Country": "Indonesia",
+      "City": "Pekanbaru"
+    },
+    {
+      "Facility": "neuCentrIX - Semarang",
+      "Country": "Indonesia",
+      "City": "Semarang"
+    },
+    {
+      "Facility": "neuCentrIX - Surabaya Gubeng",
+      "Country": "Indonesia",
+      "City": "Surabaya"
+    },
+    {
+      "Facility": "neuCentrIX - Ulin",
+      "Country": "Indonesia",
+      "City": "Banjarmasin"
+    },
+    {
+      "Facility": "neuCentrIX - Yogyakarta Kota Baru",
+      "Country": "Indonesia",
+      "City": "Yogyakarta"
+    }
+  ],
+  "Peers at this Exchange Point": [
+    {
+      "Peer Name": "ADSNET (ads.net.id)",
+      "IPv4": "36.91.197.17",
+      "ASN": "38165",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "AFNALINK",
+      "IPv4": "36.91.197.27",
+      "ASN": "149723",
+      "IPv6": "",
+      "Speed": "100M",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "AIL Network",
+      "IPv4": "36.91.199.199",
+      "ASN": "138839",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Andira Infomedia",
+      "IPv4": "36.91.199.185",
+      "ASN": "55690",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Aplika Data Nusantara",
+      "IPv4": "36.91.199.88",
+      "ASN": "140421",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Argatek Torsada Guna",
+      "IPv4": "36.91.199.201",
+      "ASN": "142315",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Arjuna Global Teknologi Indonesia",
+      "IPv4": "36.91.197.6",
+      "ASN": "135480",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "ARTAMEDIA CITRA TELEMATIKA INDONESIA",
+      "IPv4": "36.91.199.178",
+      "ASN": "136861",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "AYONET",
+      "IPv4": "36.91.197.72",
+      "ASN": "138860",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Chandra Media Nusantara, PT",
+      "IPv4": "36.91.199.214",
+      "ASN": "140423",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Citra Jelajah Informatika",
+      "IPv4": "36.91.197.11",
+      "ASN": "131717",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "CITRANET",
+      "IPv4": "36.91.197.69",
+      "ASN": "23951",
+      "IPv6": "",
+      "Speed": "100M",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Comtronics Systems",
+      "IPv4": "36.91.199.77",
+      "ASN": "23949",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Cyber Network Indonesia",
+      "IPv4": "36.91.199.72",
+      "ASN": "38496",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Cybertechtonic Pratama AS131745",
+      "IPv4": "36.91.199.45",
+      "ASN": "131745",
+      "IPv6": "",
+      "Speed": "2G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "DANKOM MITRA ABADI",
+      "IPv4": "36.91.199.34",
+      "ASN": "140007",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "DETELNET",
+      "IPv4": "36.91.199.175",
+      "ASN": "58396",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Eka Mas Republik",
+      "IPv4": "36.91.199.19",
+      "ASN": "63859",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Fiber Networks Indonesia",
+      "IPv4": "36.91.199.5",
+      "ASN": "58369",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "FIBERCONNECT.ID",
+      "IPv4": "36.91.197.9",
+      "ASN": "142310",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Gayatri Lintas Nusantara",
+      "IPv4": "36.91.199.154",
+      "ASN": "141607",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Global Erasiber Teknologi",
+      "IPv4": "36.91.197.25",
+      "ASN": "147106",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Hanasta Dakara",
+      "IPv4": "36.91.197.29",
+      "ASN": "24527",
+      "IPv6": "",
+      "Speed": "100M",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Herza Cloud",
+      "IPv4": "36.91.199.186",
+      "ASN": "140443",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Herza Cloud",
+      "IPv4": "36.91.199.37",
+      "ASN": "140443",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Hipernet Indodata AS38758",
+      "IPv4": "36.91.199.33",
+      "ASN": "38758",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "iForte Solusi Infotek - eXchange",
+      "IPv4": "36.91.199.20",
+      "ASN": "137367",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Indonesia neuCentrIX",
+      "IPv4": "36.91.197.1",
+      "ASN": "137019",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Insan Sarana Telematika",
+      "IPv4": "36.91.199.6",
+      "ASN": "24535",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Inter Medialink Solusi",
+      "IPv4": "36.91.199.83",
+      "ASN": "138854",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Inter Medialink Solusi",
+      "IPv4": "36.91.199.193",
+      "ASN": "138854",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "INTERLINK TECHNOLOGY",
+      "IPv4": "36.91.199.14",
+      "ASN": "45298",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Juragan Wifi Indonesia",
+      "IPv4": "36.91.199.44",
+      "ASN": "141073",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "KONNEK JAYA BERSAMA",
+      "IPv4": "36.91.199.86",
+      "ASN": "152435",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Lexxa Data Indonusa",
+      "IPv4": "36.91.199.137",
+      "ASN": "139428",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Lintas Data Prima",
+      "IPv4": "36.91.199.138",
+      "ASN": "45305",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Lintas Network Solusi",
+      "IPv4": "36.91.199.91",
+      "ASN": "150279",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Menaksopal Link Nusantara",
+      "IPv4": "36.91.199.152",
+      "ASN": "139981",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Milenial Inti Telekomunikasi",
+      "IPv4": "36.91.199.26",
+      "ASN": "141898",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "IPv4": "36.91.199.10",
+      "ASN": "64315",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "NAP Info Internet",
+      "IPv4": "36.91.199.47",
+      "ASN": "17727",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Padi Internet, PT",
+      "IPv4": "36.91.199.129",
+      "ASN": "23756",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Padi Internet, PT",
+      "IPv4": "36.91.199.56",
+      "ASN": "23756",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Pratama Hasta Utama Solusindo",
+      "IPv4": "36.91.199.151",
+      "ASN": "142352",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Primacom Interbuana",
+      "IPv4": "36.91.199.58",
+      "ASN": "133815",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "PT Gateway Internet Indonesia",
+      "IPv4": "36.91.199.66",
+      "ASN": "147155",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "PT Internusa Duta Makmur",
+      "IPv4": "36.91.199.188",
+      "ASN": "150208",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "PT Media Sarana Data (GMEDIA)",
+      "IPv4": "36.91.197.68",
+      "ASN": "55666",
+      "IPv6": "",
+      "Speed": "100M",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "PT PC24 Telekomunikasi Indonesia",
+      "IPv4": "36.91.197.8",
+      "ASN": "45325",
+      "IPv6": "",
+      "Speed": "20G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "PT. FORIT ASTA SOLUSINDO",
+      "IPv4": "36.91.197.16",
+      "ASN": "139993",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "QIANDRA INFORMATION TECHNOLOGY",
+      "IPv4": "36.91.199.40",
+      "ASN": "38148",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Quantum Tera Network",
+      "IPv4": "36.91.199.76",
+      "ASN": "46023",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "RACENET",
+      "IPv4": "36.91.199.67",
+      "ASN": "149318",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "RackH Lintas Asia AS135636",
+      "IPv4": "36.91.199.23",
+      "ASN": "135636",
+      "IPv6": "",
+      "Speed": "100G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Radmila Pratama Multireka",
+      "IPv4": "36.91.197.4",
+      "ASN": "141125",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Remala Abadi",
+      "IPv4": "36.91.199.50",
+      "ASN": "38511",
+      "IPv6": "",
+      "Speed": "10G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "SISTEM INTERKONEKSI DATA",
+      "IPv4": "36.91.197.86",
+      "ASN": "150923",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Skyline Semesta",
+      "IPv4": "36.91.197.10",
+      "ASN": "55653",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "IPv4": "36.91.199.2",
+      "ASN": "7713",
+      "IPv6": "",
+      "Speed": "30G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "TERABIT",
+      "IPv4": "36.91.197.67",
+      "ASN": "131706",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Transhybrid Communication",
+      "IPv4": "36.91.199.65",
+      "ASN": "24534",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Transhybrid Communication",
+      "IPv4": "36.91.197.129",
+      "ASN": "24534",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Universal Broadband",
+      "IPv4": "36.91.199.90",
+      "ASN": "55670",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "URBANACCESS",
+      "IPv4": "36.91.197.20",
+      "ASN": "140429",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Varnion Technology",
+      "IPv4": "36.91.199.43",
+      "ASN": "45287",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Varnion Technology",
+      "IPv4": "36.91.199.180",
+      "ASN": "45287",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Wistel Teknologi Solusi",
+      "IPv4": "36.91.199.80",
+      "ASN": "141596",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Wowrack Indonesia",
+      "IPv4": "36.91.199.11",
+      "ASN": "58381",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    },
+    {
+      "Peer Name": "Wowrack Indonesia",
+      "IPv4": "36.91.199.132",
+      "ASN": "58381",
+      "IPv6": "",
+      "Speed": "1G",
+      "Port Location": ""
+    }
+  ]
+}

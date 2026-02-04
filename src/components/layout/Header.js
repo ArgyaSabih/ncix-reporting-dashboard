@@ -1,17 +1,35 @@
+"use client";
+
+import {useMemberData} from "@/src/utils";
+
 const Header = () => {
+  const {data, loading} = useMemberData();
+
+  const totalMembers = data?.metadata?.totalRecords || 0;
+  const period = data?.members?.[0]?.period || "Q4 - 2024";
+
+  // Count unique cities
+  const uniqueCities = data?.members ? new Set(data.members.map((m) => m.locationDisplay)).size : 0;
+  const totalCities = 12; // Total cities target
+
   return (
-    <>
-      <div className="w-full bg-[#AC0505] h-32 flex flex-col items-center justify-center">
-        <p className="text-2xl font-semibold m-3">
-          NeuCentrIX • Membership & Presence Dashboard
-        </p>
-        <div className="flex justify-evenly w-4xl">
-          <p>Period Q4 - 2024</p>
-          <p>Total Members: 87</p>
-          <p>Cities Covered: 9/12</p>
+    <div className="w-full bg-[#AC0505] h-24 flex flex-col items-center justify-center text-white">
+      <h1 className="text-3xl font-bold mb-3">NeuCentriX • Membership & Presence Dashboard</h1>
+      <div className="flex justify-center gap-12 text-sm">
+        <div>
+          <span className="font-normal">Period: </span>
+          <span className="font-semibold">{period}</span>
+        </div>
+        <div>
+          <span className="font-normal">Total Members: </span>
+          <span className="font-semibold">{loading ? "..." : totalMembers}</span>
+        </div>
+        <div>
+          <span className="font-normal">Cities Covered: </span>
+          <span className="font-semibold">{loading ? "..." : `${uniqueCities}/${totalCities}`}</span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

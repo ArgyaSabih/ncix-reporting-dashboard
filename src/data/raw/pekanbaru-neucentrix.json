@@ -1,0 +1,161 @@
+{
+  "Facility": {
+    "Name": "neuCentrIX - Pekanbaru",
+    "Organization": "PT Telekomunikasi Indonesia Int",
+    "Also Known As": "",
+    "Long Name": "",
+    "Company Website": "https://www.neucentrix.co.id/",
+    "Address 1": "Jl. Jendral Sudirman No.199 Sumahilang",
+    "Address 2": "Pekanbaru Kota",
+    "Suite": "",
+    "Location": "Pekanbaru, Riau, 28111",
+    "Country Code": "ID",
+    "Continental Region": "Asia Pacific",
+    "Geocode": "0.524983, 101.448132",
+    "CLLI Code": "",
+    "NPA-NXX": "",
+    "Last Updated": "2025-09-26T22:58:42Z",
+    "Notes": "",
+    "Logo": "",
+    "Technical Email": "neucentrix.operation@sigma.co.id",
+    "Technical Phone": "",
+    "Sales Email": "neucentrix@telkom.co.id",
+    "Sales Phone": "+6281139002626",
+    "Property": "",
+    "Diverse Serving Substations": "Not Disclosed",
+    "Available Voltage Services": "",
+    "Health Check": ""
+  },
+  "Carriers": [],
+  "Exchanges": [
+    {
+      "Exchange": "BertuahIX",
+      "Long Name": "Bertuah Internet Exchange",
+      "Networks": "32"
+    },
+    {
+      "Exchange": "CENTRO-IX",
+      "Long Name": "Centro Internet Exchange",
+      "Networks": "36"
+    },
+    {
+      "Exchange": "NCIX - neuCentrIX",
+      "Long Name": "neuCentrIX Internet Exchange",
+      "Networks": "63"
+    }
+  ],
+  "Networks": [
+    {
+      "Peer Name": "Aditama Netmedia Solusindo",
+      "ASN": "141909"
+    },
+    {
+      "Peer Name": "AKSENT",
+      "ASN": "150460"
+    },
+    {
+      "Peer Name": "BertuahIX Route Servers",
+      "ASN": "150268"
+    },
+    {
+      "Peer Name": "Centronet Data Indonesia",
+      "ASN": "138884"
+    },
+    {
+      "Peer Name": "Chandra Media Nusantara, PT",
+      "ASN": "140423"
+    },
+    {
+      "Peer Name": "Cinoxmedia Network Indonesia",
+      "ASN": "136075"
+    },
+    {
+      "Peer Name": "CMedia Nusantara, CV",
+      "ASN": "152821"
+    },
+    {
+      "Peer Name": "DUMAI MANDIRI NET",
+      "ASN": "134655"
+    },
+    {
+      "Peer Name": "Fiber Networks Indonesia",
+      "ASN": "58369"
+    },
+    {
+      "Peer Name": "GNET BIARO AKSES",
+      "ASN": "131743"
+    },
+    {
+      "Peer Name": "Gogiga Media Teknologi",
+      "ASN": "149335"
+    },
+    {
+      "Peer Name": "IDNIC-SKYNETNETWORKBERSAMA-AS-ID",
+      "ASN": "139934"
+    },
+    {
+      "Peer Name": "Indonesia neuCentrIX",
+      "ASN": "137019"
+    },
+    {
+      "Peer Name": "Instanet Media Nusantara",
+      "ASN": "141966"
+    },
+    {
+      "Peer Name": "Jaringan Datamedia Nusantara",
+      "ASN": "149693"
+    },
+    {
+      "Peer Name": "M. Alhuda",
+      "ASN": "216375"
+    },
+    {
+      "Peer Name": "Mayatama Solusindo",
+      "ASN": "131769"
+    },
+    {
+      "Peer Name": "Mega Data Akses",
+      "ASN": "142369"
+    },
+    {
+      "Peer Name": "MITRA VISIONER PRATAMA",
+      "ASN": "64315"
+    },
+    {
+      "Peer Name": "OMNICLOUD INDONESIA",
+      "ASN": "141109"
+    },
+    {
+      "Peer Name": "PT Agung Network Solution",
+      "ASN": "149385"
+    },
+    {
+      "Peer Name": "PT Kuantan Net Akses",
+      "ASN": "150483"
+    },
+    {
+      "Peer Name": "PT. SARANA PEMBANGUNAN SIAK",
+      "ASN": "46045"
+    },
+    {
+      "Peer Name": "PT.GLOBALRIAU DATA SOLUSI",
+      "ASN": "135459"
+    },
+    {
+      "Peer Name": "Shanum Sarana Telekomunikasi",
+      "ASN": "150238"
+    },
+    {
+      "Peer Name": "SOLNET INDONESIA",
+      "ASN": "138128"
+    },
+    {
+      "Peer Name": "Telekomunikasi Indonesia Int (TELIN)",
+      "ASN": "7713"
+    },
+    {
+      "Peer Name": "Wahyu Akses Koneksi Riau",
+      "ASN": "141660"
+    }
+  ]
+}
