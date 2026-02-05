@@ -1,6 +1,6 @@
 "use client";
 
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import {MapContainer, TileLayer, CircleMarker, Popup, Polyline, useMap} from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -20,25 +20,56 @@ function FitBounds() {
   return null;
 }
 
+// Component to close all popups when city is deselected
+function ClosePopups({selectedCity}) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!selectedCity) {
+      map.closePopup();
+    }
+  }, [selectedCity, map]);
+
+  return null;
+}
+
 // Component to handle city selection and fly to
 function CityFlyTo({selectedCity, locations}) {
   const map = useMap();
-  const prevCity = useRef(selectedCity);
+  const prevCity = useRef(selectedCity?.city);
 
   useEffect(() => {
-    if (selectedCity && selectedCity !== prevCity.current) {
-      const location = locations.find((l) => l.location === selectedCity || l.city === selectedCity);
+    if (selectedCity && selectedCity.city !== prevCity.current) {
+      // Fly to selected city
+      const location = locations.find(
+        (l) => l.location === selectedCity.location || l.city === selectedCity.city
+      );
       if (location) {
         map.flyTo([location.lat, location.lng], 10, {duration: 1.5});
       }
-      prevCity.current = selectedCity;
+      prevCity.current = selectedCity.city;
+    } else if (!selectedCity && prevCity.current) {
+      // Reset to Indonesia bounds when city is deselected
+      const bounds = [
+        [6, 95], // North-West
+        [-11, 141] // South-East
+      ];
+      map.flyToBounds(bounds, {padding: [20, 20], duration: 1.5});
+      prevCity.current = null;
     }
   }, [selectedCity, locations, map]);
 
   return null;
 }
 
-export default function MapComponent({locations, selectedCity, onCityClick, activeLayers, facilities}) {
+export default function MapComponent({
+  locations,
+  selectedCity,
+  onCityClick,
+  onReset,
+  activeLayers,
+  facilities
+}) {
   // Calculate max for scaling
   const maxTotalRows = locations.length > 0 ? Math.max(...locations.map((l) => l.totalRows || 0)) : 1;
 
@@ -79,7 +110,30 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
   }
 
   return (
-    <div className="w-full h-full rounded-lg overflow-hidden">
+    <div className="w-full h-full rounded-lg overflow-hidden relative">
+      {/* Reset Button */}
+      {selectedCity && (
+        <button
+          onClick={onReset}
+          className="absolute top-3 right-3 z-[1000] cursor-pointer bg-white px-3 py-2 rounded-md shadow-md border border-slate-300 hover:bg-slate-100 transition-colors flex items-center gap-2 text-sm font-medium text-slate-700"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+            />
+          </svg>
+          Reset Map
+        </button>
+      )}
       <MapContainer
         center={[-2.5, 118]}
         zoom={5}
@@ -95,6 +149,7 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
 
         <FitBounds />
         <CityFlyTo selectedCity={selectedCity} locations={locations} />
+        <ClosePopups selectedCity={selectedCity} />
 
         {/* Layer 3: Trace ASN - Network connections */}
         {activeLayers.includes("trace-asn") &&
@@ -114,7 +169,8 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
         {/* Layer 1: Presence Heatmap */}
         {activeLayers.includes("heatmap") &&
           locations.map((location, index) => {
-            const isSelected = selectedCity === location.location || selectedCity === location.city;
+            const isSelected =
+              selectedCity?.city === location.city || selectedCity?.location === location.location;
             const intensity = (location.totalRows || 0) / maxTotalRows;
             const colors =
               intensity > 0.7
@@ -137,7 +193,7 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
                 eventHandlers={{
                   click: () => {
                     if (onCityClick) {
-                      onCityClick(location.location);
+                      onCityClick({city: location.city, location: location.location});
                     }
                   }
                 }}
@@ -175,7 +231,8 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
         {/* Layer 2: Presence Bubbles */}
         {activeLayers.includes("bubbles") &&
           locations.map((location, index) => {
-            const isSelected = selectedCity === location.location || selectedCity === location.city;
+            const isSelected =
+              selectedCity?.city === location.city || selectedCity?.location === location.location;
 
             return (
               <CircleMarker
@@ -191,7 +248,7 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
                 eventHandlers={{
                   click: () => {
                     if (onCityClick) {
-                      onCityClick(location.location);
+                      onCityClick({city: location.city, location: location.location});
                     }
                   }
                 }}
@@ -211,7 +268,8 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
         {/* Layer 3: Trace ASN nodes */}
         {activeLayers.includes("trace-asn") &&
           locations.map((location, index) => {
-            const isSelected = selectedCity === location.location || selectedCity === location.city;
+            const isSelected =
+              selectedCity?.city === location.city || selectedCity?.location === location.location;
 
             return (
               <CircleMarker
@@ -227,7 +285,7 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
                 eventHandlers={{
                   click: () => {
                     if (onCityClick) {
-                      onCityClick(location.location);
+                      onCityClick({city: location.city, location: location.location});
                     }
                   }
                 }}

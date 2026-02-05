@@ -17,7 +17,7 @@ const MapComponent = dynamic(() => import("./MapComponent"), {
   )
 });
 
-export default function MemberMap({activeLayers, viewMode, selectedCity, onCityClick}) {
+export default function MemberMap({activeLayers, viewMode, selectedCity, onCityClick, onReset}) {
   const {data, loading, error} = useMemberData();
 
   // Use useMemo instead of useState + useEffect to avoid the setState in effect warning
@@ -103,6 +103,7 @@ export default function MemberMap({activeLayers, viewMode, selectedCity, onCityC
         locations={locations}
         selectedCity={selectedCity}
         onCityClick={onCityClick}
+        onReset={onReset}
         activeLayers={activeLayers}
         facilities={data?.facilities || []}
       />
