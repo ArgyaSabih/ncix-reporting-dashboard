@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <div>
           <span className="font-normal">Cities Covered: </span>
-          <span className="font-semibold">{loading ? "..." : `${uniqueCities}/${totalCities}`}</span>
+          <span className="font-semibold">{loading ? "..." : `${uniqueCities}`}</span>
         </div>
       </div>
     </div>
