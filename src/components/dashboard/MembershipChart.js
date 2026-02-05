@@ -72,7 +72,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
 
           <div className="mt-6 pb-2 pt-4 border-t border-slate-200">
             <div className="text-center p-3 bg-blue-50 rounded-md">
-              <p className="text-xs text-slate-600 mb-1">Total Members</p>
+              <p className="text-xs text-slate-600 mb-1">Total Customers</p>
               <p className="text-2xl font-bold text-blue-600">{total}</p>
             </div>
           </div>
@@ -105,11 +105,11 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
 
       return (
         <div className="flex-1 border border-slate-300 p-4 rounded-md bg-white">
-          <h2 className="text-lg font-bold text-slate-800 mb-4">Top Customers in {selectedCity.city}</h2>
+          <h2 className="text-lg font-bold text-slate-800 mb-4">Top Companies in {selectedCity.city}</h2>
 
           <div className="space-y-3 overflow-y-auto max-h-56 pr-1 pb-4">
             {customers.length === 0 ? (
-              <p className="text-slate-500 text-center py-4">No customers in this city</p>
+              <p className="text-slate-500 text-center py-4">No companies in this city</p>
             ) : (
               customers.map((customer, index) => (
                 <div key={customer.customer} className="space-y-1">
@@ -157,7 +157,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
 
     return (
       <div className="flex-1 border border-slate-300 p-4 rounded-md bg-white">
-        <h2 className="text-lg font-bold text-slate-800 mb-4">Locations per Customer</h2>
+        <h2 className="text-lg font-bold text-slate-800 mb-4">Locations per Company</h2>
 
         <div className="space-y-3 overflow-y-auto max-h-56 pr-1 pb-4">
           {customers.map((customer, index) => (
@@ -199,7 +199,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
 
       return (
         <div className="flex-1 border border-slate-300 p-4 rounded-md bg-white">
-          <h2 className="text-lg font-bold text-slate-800 mb-4">Membership in {selectedCity.city}</h2>
+          <h2 className="text-lg font-bold text-slate-800 mb-4">Membership Mix - {selectedCity.city}</h2>
 
           <div className="space-y-3 overflow-y-auto max-h-56 pr-1">
             <div className="space-y-4">
@@ -235,7 +235,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
 
             <div className="mt-6 pb-2 pt-4 border-t border-slate-200">
               <div className="text-center p-3 bg-blue-50 rounded-md">
-                <p className="text-xs text-slate-600 mb-1">Total Members in City</p>
+                <p className="text-xs text-slate-600 mb-1">Total Customers in City</p>
                 <p className="text-2xl font-bold text-blue-600">{total}</p>
               </div>
             </div>
@@ -251,7 +251,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
 
     return (
       <div className="flex-1 border border-slate-300 p-4 rounded-md bg-white">
-        <h2 className="text-lg font-bold text-slate-800 mb-4">Top Cities by Members</h2>
+        <h2 className="text-lg font-bold text-slate-800 mb-4">Top Cities by Customers</h2>
 
         <div className="space-y-3 overflow-y-auto max-h-56 pr-1">
           <div className="space-y-3 ">
@@ -281,7 +281,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
                 <p className="text-xl font-bold text-blue-600">{locationStats.length}</p>
               </div>
               <div className="text-center p-3 bg-green-50 rounded-md">
-                <p className="text-xs text-slate-600 mb-1">Total Members</p>
+                <p className="text-xs text-slate-600 mb-1">Total Customers</p>
                 <p className="text-xl font-bold text-green-600">{data.members.length}</p>
               </div>
             </div>

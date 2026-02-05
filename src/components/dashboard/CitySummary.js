@@ -47,7 +47,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
           <div className="overflow-y-auto max-h-44 pr-1">
             <div className="space-y-3 text-slate-700">
               <div className="flex justify-between py-2 border-b border-slate-200">
-                <span className="font-medium">Total Members:</span>
+                <span className="font-medium">Total Customers:</span>
                 <span className="font-bold">{totalMembers}</span>
               </div>
               <div className="flex justify-between py-2 border-b border-slate-200">
@@ -127,7 +127,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
         <div className="overflow-y-auto max-h-44 pr-1">
           <div className="space-y-3 text-slate-700">
             <div className="flex justify-between py-2 border-b border-slate-200">
-              <span className="font-medium">Total Members:</span>
+              <span className="font-medium">Total Customers:</span>
               <span className="font-bold">{cityMembers.length}</span>
             </div>
             <div className="flex justify-between py-2 border-b border-slate-200">
@@ -235,7 +235,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
 
           <div className="space-y-3 overflow-y-auto pb-4 max-h-44 pr-1 text-slate-700">
             <div className="flex justify-between py-2 border-b border-slate-200">
-              <span className="font-medium">Total Customers:</span>
+              <span className="font-medium">Total Companies:</span>
               <span className="font-bold">{uniqueCustomers.length}</span>
             </div>
             <div className="flex justify-between py-2 border-b border-slate-200">
@@ -283,19 +283,19 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
 
           <div className="space-y-3 overflow-y-auto pb-4 max-h-44 pr-1 text-slate-700">
             <div className="flex justify-between py-2 border-b border-slate-200">
-              <span className="font-medium">Total Customers:</span>
+              <span className="font-medium">Total Companies:</span>
               <span className="font-bold">{totalCustomers}</span>
             </div>
             <div className="flex justify-between py-2 border-b border-slate-200">
-              <span className="font-medium">Multi-City Customers:</span>
+              <span className="font-medium">Multi-City Companies:</span>
               <span className="font-bold">{multiCityCustomers}</span>
             </div>
             <div className="flex justify-between py-2 border-b border-slate-200">
-              <span className="font-medium">Avg Cities/Customer:</span>
+              <span className="font-medium">Avg Cities/Company:</span>
               <span className="font-bold">{avgCitiesPerCustomer}</span>
             </div>
             <div className="flex justify-between py-2 border-b border-slate-200">
-              <span className="font-medium">Top Customer:</span>
+              <span className="font-medium">Top Company:</span>
               <span className="font-bold">{customers[0]?.customer || "N/A"}</span>
             </div>
           </div>
@@ -332,7 +332,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
           <div className="overflow-y-auto max-h-44 pr-1">
             <div className="space-y-3 text-slate-700">
               <div className="flex justify-between py-2 border-b border-slate-200">
-                <span className="font-medium">Total Members:</span>
+                <span className="font-medium">Total Customers:</span>
                 <span className="font-bold">{totalMembers}</span>
               </div>
               <div className="flex justify-between py-2 border-b border-slate-200">
@@ -400,7 +400,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
         <div className="overflow-y-auto max-h-44 pr-1">
           <div className="space-y-3 text-slate-700">
             <div className="flex justify-between py-2 border-b border-slate-200">
-              <span className="font-medium">Total Members:</span>
+              <span className="font-medium">Total Customers:</span>
               <span className="font-bold">{totalMembers}</span>
             </div>
             <div className="flex justify-between py-2 border-b border-slate-200">

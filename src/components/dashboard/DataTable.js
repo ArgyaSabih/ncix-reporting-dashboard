@@ -42,7 +42,7 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
         className="flex-1 border border-slate-300 p-4 rounded-md bg-white flex flex-col"
       >
         <h2 className="text-lg font-bold text-slate-800 mb-4">
-          {selectedCity ? `Members in ${selectedCity.city}` : "All Members"}
+          {selectedCity ? `Customers in ${selectedCity.city}` : "All Customers"}
         </h2>
 
         <div className="flex-1 overflow-auto" style={{maxHeight: "300px"}}>
@@ -131,14 +131,14 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
 
       return (
         <div className="flex-1 border border-slate-300 p-4 rounded-md bg-white flex flex-col">
-          <h2 className="text-lg font-bold text-slate-800 mb-4">Customers in {selectedCity.city}</h2>
+          <h2 className="text-lg font-bold text-slate-800 mb-4">Companies in {selectedCity.city}</h2>
 
           <div className="flex-1 overflow-auto" style={{maxHeight: "300px"}}>
             <table className="w-full text-sm border-collapse">
               <thead className="sticky top-0">
                 <tr className="bg-slate-200 border-b border-slate-300">
                   <th className="text-center p-2 font-semibold text-slate-700 border-r border-slate-300">
-                    Customer
+                    Company
                   </th>
                   <th className="text-center p-2 font-semibold text-slate-700 border-r border-slate-300">
                     Connections
@@ -225,14 +225,14 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
 
     return (
       <div className="flex-1 border border-slate-300 p-4 rounded-md bg-white flex flex-col">
-        <h2 className="text-lg font-bold text-slate-800 mb-4">Customer Network</h2>
+        <h2 className="text-lg font-bold text-slate-800 mb-4">Company Network</h2>
 
         <div className="flex-1 overflow-auto" style={{maxHeight: "300px"}}>
           <table className="w-full text-sm border-collapse">
             <thead className="sticky top-0">
               <tr className="bg-slate-200 border-b border-slate-300">
                 <th className="text-center p-2 font-semibold text-slate-700 border-r border-slate-300">
-                  Customer
+                  Company
                 </th>
                 <th className="text-center p-2 font-semibold text-slate-700 border-r border-slate-300">
                   Cities
@@ -284,7 +284,7 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
     return (
       <div className="flex-1 border border-slate-300 p-4 rounded-md bg-white flex flex-col">
         <h2 className="text-lg font-bold text-slate-800 mb-4">
-          {selectedCity ? `Members in ${selectedCity.city}` : "All NCIX Members"}
+          {selectedCity ? `Customers in ${selectedCity.city}` : "All NCIX Customers"}
         </h2>
 
         <div className="flex-1 overflow-auto" style={{maxHeight: "300px"}}>
