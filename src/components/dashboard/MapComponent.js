@@ -137,6 +137,79 @@ export default function MapComponent({
           Reset Map
         </button>
       )}
+
+      {/* Legend */}
+      {activeLayers.length > 0 && (
+        <div className="absolute bottom-8 right-4 z-[1000] bg-white rounded-lg shadow-lg border border-slate-200 p-3 max-w-[200px]">
+          <h4 className="font-semibold text-slate-800 text-xs mb-2 border-b border-slate-200 pb-1">Legend</h4>
+
+          {/* Heatmap Legend */}
+          {activeLayers.includes("heatmap") && (
+            <div className="mb-2">
+              <p className="text-xs font-medium text-slate-700 mb-1">Presence Heatmap</p>
+              <div className="space-y-1">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-600 border border-red-700"></div>
+                  <span className="text-xs text-slate-600">High (&gt;70%)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-orange-500 border border-orange-600"></div>
+                  <span className="text-xs text-slate-600">Medium (40-70%)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-amber-400 border border-amber-500"></div>
+                  <span className="text-xs text-slate-600">Low (&lt;40%)</span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Bubbles Legend */}
+          {activeLayers.includes("bubbles") && (
+            <div className="mb-2">
+              <p className="text-xs font-medium text-slate-700 mb-1">Presence Bubbles</p>
+              <div className="space-y-1">
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 rounded-full bg-red-500 opacity-60 border-2 border-red-600"></div>
+                  <span className="text-xs text-slate-600">More customers</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500 opacity-60 border-2 border-red-600"></div>
+                  <span className="text-xs text-slate-600">Fewer customers</span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Trace ASN Legend */}
+          {activeLayers.includes("trace-asn") && (
+            <div className="mb-0">
+              <p className="text-xs font-medium text-slate-700 mb-1">Trace ASN</p>
+              <div className="space-y-1">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-blue-500 border-2 border-blue-600"></div>
+                  <span className="text-xs text-slate-600">Network node</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div
+                    className="w-5 h-0.5 bg-blue-500 border-dashed"
+                    style={{borderTop: "2px dashed #3b82f6"}}
+                  ></div>
+                  <span className="text-xs text-slate-600">Connection</span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Selected indicator */}
+          <div className="mt-2 pt-2 border-t border-slate-200">
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-blue-500 border-2 border-blue-700"></div>
+              <span className="text-xs text-slate-600">Selected</span>
+            </div>
+          </div>
+        </div>
+      )}
       <MapContainer
         center={[-2.5, 118]}
         zoom={5}
