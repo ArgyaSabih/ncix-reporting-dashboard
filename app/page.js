@@ -53,7 +53,6 @@ export default function Home() {
           selectedCustomer={selectedCustomer}
         />
         <DataTable
-          key={selectedCity?.city || "all"}
           viewMode={viewMode}
           selectedCity={selectedCity}
           selectedCustomer={selectedCustomer}
