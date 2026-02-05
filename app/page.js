@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import {useState} from "react";
 import CitySummary from "@/src/components/dashboard/CitySummary";
 import DataTable from "@/src/components/dashboard/DataTable";
 import MemberMap from "@/src/components/dashboard/MemberMap";
@@ -21,7 +21,12 @@ export default function Home() {
 
   const handleCustomerClick = (customer) => {
     setSelectedCustomer(customer);
+  };
+
+  const handleReset = () => {
     setSelectedCity(null);
+    setSelectedCustomer(null);
+    setActiveLayers(["heatmap"]);
   };
 
   const handleLayerToggle = (layer) => {
@@ -48,15 +53,13 @@ export default function Home() {
           activeLayers={activeLayers}
           viewMode={viewMode}
           selectedCity={selectedCity}
+          selectedCustomer={selectedCustomer}
           onCityClick={handleCityClick}
+          onReset={handleReset}
         />
       </div>
       <div className="flex gap-4 p-4 pt-0 h-80 overflow-hidden">
-        <CitySummary
-          viewMode={viewMode}
-          selectedCity={selectedCity}
-          selectedCustomer={selectedCustomer}
-        />
+        <CitySummary viewMode={viewMode} selectedCity={selectedCity} selectedCustomer={selectedCustomer} />
         <MembershipChart
           viewMode={viewMode}
           selectedCity={selectedCity}

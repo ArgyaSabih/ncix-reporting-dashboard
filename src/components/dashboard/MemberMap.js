@@ -17,7 +17,14 @@ const MapComponent = dynamic(() => import("./MapComponent"), {
   )
 });
 
-export default function MemberMap({activeLayers, viewMode, selectedCity, onCityClick}) {
+export default function MemberMap({
+  activeLayers,
+  viewMode,
+  selectedCity,
+  selectedCustomer,
+  onCityClick,
+  onReset
+}) {
   const {data, loading, error} = useMemberData();
 
   // Use useMemo instead of useState + useEffect to avoid the setState in effect warning
@@ -52,11 +59,11 @@ export default function MemberMap({activeLayers, viewMode, selectedCity, onCityC
 
       // Breakdown by membership type
       const membershipType = member.membershipType || "";
-      if (membershipType.includes("Member Class A")) {
+      if (membershipType === "Class A") {
         locationGroups[key].memberClassA++;
-      } else if (membershipType.includes("Member Class B")) {
+      } else if (membershipType === "Class B") {
         locationGroups[key].memberClassB++;
-      } else if (membershipType.includes("Member Class C")) {
+      } else if (membershipType === "Class C") {
         locationGroups[key].memberClassC++;
       } else {
         locationGroups[key].nonMember++;
@@ -102,9 +109,13 @@ export default function MemberMap({activeLayers, viewMode, selectedCity, onCityC
       <MapComponent
         locations={locations}
         selectedCity={selectedCity}
+        selectedCustomer={selectedCustomer}
         onCityClick={onCityClick}
+        onReset={onReset}
         activeLayers={activeLayers}
         facilities={data?.facilities || []}
+        viewMode={viewMode}
+        members={data?.members || []}
       />
     </div>
   );

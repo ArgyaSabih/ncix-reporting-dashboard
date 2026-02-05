@@ -21,7 +21,7 @@ const Header = () => {
           <span className="font-semibold">{period}</span>
         </div>
         <div>
-          <span className="font-normal">Total Members: </span>
+          <span className="font-normal">Total Customers: </span>
           <span className="font-semibold">{loading ? "..." : totalMembers}</span>
         </div>
         <div>

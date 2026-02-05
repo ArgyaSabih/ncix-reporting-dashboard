@@ -1,6 +1,6 @@
 "use client";
 
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import {MapContainer, TileLayer, CircleMarker, Popup, Polyline, useMap} from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -20,25 +20,59 @@ function FitBounds() {
   return null;
 }
 
+// Component to close all popups when city is deselected
+function ClosePopups({selectedCity}) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!selectedCity) {
+      map.closePopup();
+    }
+  }, [selectedCity, map]);
+
+  return null;
+}
+
 // Component to handle city selection and fly to
 function CityFlyTo({selectedCity, locations}) {
   const map = useMap();
-  const prevCity = useRef(selectedCity);
+  const prevCity = useRef(selectedCity?.city);
 
   useEffect(() => {
-    if (selectedCity && selectedCity !== prevCity.current) {
-      const location = locations.find((l) => l.location === selectedCity || l.city === selectedCity);
+    if (selectedCity && selectedCity.city !== prevCity.current) {
+      // Fly to selected city
+      const location = locations.find(
+        (l) => l.location === selectedCity.location || l.city === selectedCity.city
+      );
       if (location) {
         map.flyTo([location.lat, location.lng], 10, {duration: 1.5});
       }
-      prevCity.current = selectedCity;
+      prevCity.current = selectedCity.city;
+    } else if (!selectedCity && prevCity.current) {
+      // Reset to Indonesia bounds when city is deselected
+      const bounds = [
+        [6, 95], // North-West
+        [-11, 141] // South-East
+      ];
+      map.flyToBounds(bounds, {padding: [20, 20], duration: 1.5});
+      prevCity.current = null;
     }
   }, [selectedCity, locations, map]);
 
   return null;
 }
 
-export default function MapComponent({locations, selectedCity, onCityClick, activeLayers, facilities}) {
+export default function MapComponent({
+  locations,
+  selectedCity,
+  selectedCustomer,
+  onCityClick,
+  onReset,
+  activeLayers,
+  facilities,
+  viewMode,
+  members
+}) {
   // Calculate max for scaling
   const maxTotalRows = locations.length > 0 ? Math.max(...locations.map((l) => l.totalRows || 0)) : 1;
 
@@ -79,7 +113,30 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
   }
 
   return (
-    <div className="w-full h-full rounded-lg overflow-hidden">
+    <div className="w-full h-full rounded-lg overflow-hidden relative">
+      {/* Reset Button */}
+      {(selectedCity || selectedCustomer) && (
+        <button
+          onClick={onReset}
+          className="absolute top-3 right-3 z-[1000] cursor-pointer bg-white px-3 py-2 rounded-md shadow-md border border-slate-300 hover:bg-slate-100 transition-colors flex items-center gap-2 text-sm font-medium text-slate-700"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+            />
+          </svg>
+          Reset Map
+        </button>
+      )}
       <MapContainer
         center={[-2.5, 118]}
         zoom={5}
@@ -95,6 +152,7 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
 
         <FitBounds />
         <CityFlyTo selectedCity={selectedCity} locations={locations} />
+        <ClosePopups selectedCity={selectedCity} />
 
         {/* Layer 3: Trace ASN - Network connections */}
         {activeLayers.includes("trace-asn") &&
@@ -114,7 +172,8 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
         {/* Layer 1: Presence Heatmap */}
         {activeLayers.includes("heatmap") &&
           locations.map((location, index) => {
-            const isSelected = selectedCity === location.location || selectedCity === location.city;
+            const isSelected =
+              selectedCity?.city === location.city || selectedCity?.location === location.location;
             const intensity = (location.totalRows || 0) / maxTotalRows;
             const colors =
               intensity > 0.7
@@ -137,36 +196,119 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
                 eventHandlers={{
                   click: () => {
                     if (onCityClick) {
-                      onCityClick(location.location);
+                      onCityClick({city: location.city, location: location.location});
                     }
                   }
                 }}
               >
                 <Popup>
-                  <div className="p-1 min-w-[200px]">
-                    <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
-                    <div className="bg-blue-50 p-2 rounded mb-2">
-                      <p className="text-blue-900 font-bold text-sm">Total Members: {location.totalRows}</p>
+                  {viewMode === "facility" && (
+                    <div className="p-1 min-w-[200px]">
+                      <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                      <div className="bg-blue-50 p-2 rounded mb-2">
+                        <p className="text-blue-900 font-bold text-sm">
+                          Total Customers: {location.totalRows}
+                        </p>
+                      </div>
+                      <div className="space-y-1 text-xs">
+                        <div className="flex justify-between">
+                          <span className="text-gray-600">Member Class A:</span>
+                          <span className="font-semibold text-gray-900">{location.memberClassA}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-gray-600">Member Class B:</span>
+                          <span className="font-semibold text-gray-900">{location.memberClassB}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-gray-600">Member Class C:</span>
+                          <span className="font-semibold text-gray-900">{location.memberClassC}</span>
+                        </div>
+                        <div className="flex justify-between border-t border-gray-300 pt-1 mt-1">
+                          <span className="text-gray-600">Non Member:</span>
+                          <span className="font-semibold text-gray-900">{location.nonMember}</span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="space-y-1 text-xs">
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Member Class A:</span>
-                        <span className="font-semibold text-gray-900">{location.memberClassA}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Member Class B:</span>
-                        <span className="font-semibold text-gray-900">{location.memberClassB}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Member Class C:</span>
-                        <span className="font-semibold text-gray-900">{location.memberClassC}</span>
-                      </div>
-                      <div className="flex justify-between border-t border-gray-300 pt-1 mt-1">
-                        <span className="text-gray-600">Non Member:</span>
-                        <span className="font-semibold text-gray-900">{location.nonMember}</span>
-                      </div>
-                    </div>
-                  </div>
+                  )}
+                  {viewMode === "network" &&
+                    (() => {
+                      const cityMembers = members.filter((m) => m.locationDisplay === location.city);
+                      const uniqueCustomers = [...new Set(cityMembers.map((m) => m.customer))];
+                      return (
+                        <div className="p-1 min-w-[200px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                          <div className="bg-purple-50 p-2 rounded mb-2">
+                            <p className="text-purple-900 font-bold text-sm">Network Info</p>
+                          </div>
+                          <div className="space-y-1 text-xs">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Total Companies:</span>
+                              <span className="font-semibold text-gray-900">{uniqueCustomers.length}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Total Connections:</span>
+                              <span className="font-semibold text-gray-900">{cityMembers.length}</span>
+                            </div>
+                            <div className="flex justify-between border-t border-gray-300 pt-1 mt-1">
+                              <span className="text-gray-600">Class A:</span>
+                              <span className="font-semibold text-gray-900">{location.memberClassA}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Class B:</span>
+                              <span className="font-semibold text-gray-900">{location.memberClassB}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Class C:</span>
+                              <span className="font-semibold text-gray-900">{location.memberClassC}</span>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })()}
+                  {viewMode === "exchange" &&
+                    (() => {
+                      const total = location.totalRows;
+                      const classAPercent =
+                        total > 0 ? ((location.memberClassA / total) * 100).toFixed(0) : 0;
+                      const classBPercent =
+                        total > 0 ? ((location.memberClassB / total) * 100).toFixed(0) : 0;
+                      const classCPercent =
+                        total > 0 ? ((location.memberClassC / total) * 100).toFixed(0) : 0;
+                      const nonMemberPercent =
+                        total > 0 ? ((location.nonMember / total) * 100).toFixed(0) : 0;
+                      return (
+                        <div className="p-1 min-w-[200px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                          <div className="bg-green-50 p-2 rounded mb-2">
+                            <p className="text-green-900 font-bold text-sm">Exchange Info</p>
+                          </div>
+                          <div className="space-y-1 text-xs">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Total Customers:</span>
+                              <span className="font-semibold text-gray-900">{total}</span>
+                            </div>
+                            <div className="border-t border-gray-300 pt-1 mt-1">
+                              <div className="flex justify-between">
+                                <span className="text-gray-600">Class A:</span>
+                                <span className="font-semibold text-gray-900">{classAPercent}%</span>
+                              </div>
+                              <div className="flex justify-between">
+                                <span className="text-gray-600">Class B:</span>
+                                <span className="font-semibold text-gray-900">{classBPercent}%</span>
+                              </div>
+                              <div className="flex justify-between">
+                                <span className="text-gray-600">Class C:</span>
+                                <span className="font-semibold text-gray-900">{classCPercent}%</span>
+                              </div>
+                              <div className="flex justify-between">
+                                <span className="text-gray-600">Non Member:</span>
+                                <span className="font-semibold text-gray-900">{nonMemberPercent}%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })()}
                 </Popup>
               </CircleMarker>
             );
@@ -175,7 +317,8 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
         {/* Layer 2: Presence Bubbles */}
         {activeLayers.includes("bubbles") &&
           locations.map((location, index) => {
-            const isSelected = selectedCity === location.location || selectedCity === location.city;
+            const isSelected =
+              selectedCity?.city === location.city || selectedCity?.location === location.location;
 
             return (
               <CircleMarker
@@ -191,18 +334,52 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
                 eventHandlers={{
                   click: () => {
                     if (onCityClick) {
-                      onCityClick(location.location);
+                      onCityClick({city: location.city, location: location.location});
                     }
                   }
                 }}
               >
                 <Popup>
-                  <div className="p-1 min-w-[150px]">
-                    <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
-                    <div className="bg-red-50 p-2 rounded">
-                      <p className="text-red-700 font-bold text-lg">Members: {location.totalRows}</p>
+                  {viewMode === "facility" && (
+                    <div className="p-1 min-w-[150px]">
+                      <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                      <div className="bg-red-50 p-2 rounded">
+                        <p className="text-red-700 font-bold text-lg">Customers: {location.totalRows}</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
+                  {viewMode === "network" &&
+                    (() => {
+                      const cityMembers = members.filter((m) => m.locationDisplay === location.city);
+                      const uniqueCustomers = [...new Set(cityMembers.map((m) => m.customer))];
+                      return (
+                        <div className="p-1 min-w-[180px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                          <div className="bg-red-50 p-2 rounded mb-2">
+                            <p className="text-red-700 font-bold text-base">Network Node</p>
+                          </div>
+                          <div className="text-xs space-y-1">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Companies:</span>
+                              <span className="font-semibold text-gray-900">{uniqueCustomers.length}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Connections:</span>
+                              <span className="font-semibold text-gray-900">{cityMembers.length}</span>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })()}
+                  {viewMode === "exchange" && (
+                    <div className="p-1 min-w-[150px]">
+                      <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                      <div className="bg-red-50 p-2 rounded">
+                        <p className="text-red-700 font-bold text-base">NCIX Location</p>
+                        <p className="text-red-600 text-sm mt-1">{location.totalRows} customers</p>
+                      </div>
+                    </div>
+                  )}
                 </Popup>
               </CircleMarker>
             );
@@ -211,7 +388,8 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
         {/* Layer 3: Trace ASN nodes */}
         {activeLayers.includes("trace-asn") &&
           locations.map((location, index) => {
-            const isSelected = selectedCity === location.location || selectedCity === location.city;
+            const isSelected =
+              selectedCity?.city === location.city || selectedCity?.location === location.location;
 
             return (
               <CircleMarker
@@ -227,20 +405,80 @@ export default function MapComponent({locations, selectedCity, onCityClick, acti
                 eventHandlers={{
                   click: () => {
                     if (onCityClick) {
-                      onCityClick(location.location);
+                      onCityClick({city: location.city, location: location.location});
                     }
                   }
                 }}
               >
                 <Popup>
-                  <div className="p-1 min-w-[180px]">
-                    <h3 className="font-bold text-gray-900 text-base mb-1">{location.city}</h3>
-                    <p className="text-gray-600 text-xs mb-2">{location.location}</p>
-                    <div className="bg-blue-50 p-2 rounded">
-                      <p className="text-blue-700 font-semibold text-sm">Network Node</p>
-                      <p className="text-gray-600 text-xs mt-1">Trace ASN connections</p>
+                  {viewMode === "facility" && (
+                    <div className="p-1 min-w-[180px]">
+                      <h3 className="font-bold text-gray-900 text-base mb-1">{location.city}</h3>
+                      <p className="text-gray-600 text-xs mb-2">{location.location}</p>
+                      <div className="bg-blue-50 p-2 rounded">
+                        <p className="text-blue-700 font-semibold text-sm">Network Node</p>
+                        <p className="text-gray-600 text-xs mt-1">Total: {location.totalRows} customers</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
+                  {viewMode === "network" &&
+                    (() => {
+                      const cityMembers = members.filter((m) => m.locationDisplay === location.city);
+                      const uniqueCustomers = [...new Set(cityMembers.map((m) => m.customer))];
+                      const topCustomers = uniqueCustomers.slice(0, 3);
+                      return (
+                        <div className="p-1 min-w-[200px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-1">{location.city}</h3>
+                          <div className="bg-blue-50 p-2 rounded mb-2">
+                            <p className="text-blue-700 font-semibold text-sm">ASN Network Hub</p>
+                          </div>
+                          <div className="text-xs space-y-1">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Companies:</span>
+                              <span className="font-semibold text-gray-900">{uniqueCustomers.length}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Connections:</span>
+                              <span className="font-semibold text-gray-900">{cityMembers.length}</span>
+                            </div>
+                            {topCustomers.length > 0 && (
+                              <div className="border-t border-gray-300 pt-1 mt-1">
+                                <p className="text-gray-600 mb-1">Top Companies:</p>
+                                <p className="text-gray-700">{topCustomers.join(", ")}</p>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })()}
+                  {viewMode === "exchange" &&
+                    (() => {
+                      const total = location.totalRows;
+                      const memberCount =
+                        location.memberClassA + location.memberClassB + location.memberClassC;
+                      return (
+                        <div className="p-1 min-w-[180px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-1">{location.city}</h3>
+                          <div className="bg-blue-50 p-2 rounded mb-2">
+                            <p className="text-blue-700 font-semibold text-sm">NCIX Exchange Point</p>
+                          </div>
+                          <div className="text-xs space-y-1">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Total Customers:</span>
+                              <span className="font-semibold text-gray-900">{total}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Members:</span>
+                              <span className="font-semibold text-gray-900">{memberCount}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Non-Members:</span>
+                              <span className="font-semibold text-gray-900">{location.nonMember}</span>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })()}
                 </Popup>
               </CircleMarker>
             );
