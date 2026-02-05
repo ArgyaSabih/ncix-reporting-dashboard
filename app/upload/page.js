@@ -4,6 +4,7 @@ import DataUploader from "@/src/components/dashboard/DataUploader";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { FaArrowLeft } from "react-icons/fa";
 
 export default function AdminPage() {
   const router = useRouter();
@@ -21,12 +22,10 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-6 flex items-center justify-between">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">
-            Upload Data CSV
-          </h2>
+        <div className="mb-6 flex items-center">
           <Link href="/">
-            <button className="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded transition-colors cursor-pointer">
+            <button className="px-4 py-2 bg-[#AC0505] hover:bg-[#880606] text-white rounded transition-colors cursor-pointer flex justify-center items-center gap-2">
+              <FaArrowLeft className="text-white" />
               Kembali ke Dashboard
             </button>
           </Link>
