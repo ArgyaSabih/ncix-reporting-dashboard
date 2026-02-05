@@ -14,6 +14,8 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
   if (selectedCity?.city !== prevCityId) {
     setPrevCityId(selectedCity?.city);
     setFacilityPage(0);
+    setNetworkPage(0);
+    setExchangePage(0);
   }
 
   if (loading || !data) {
@@ -180,7 +182,7 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
                 <button
                   onClick={() => setNetworkPage(Math.max(0, networkPage - 1))}
                   disabled={networkPage === 0}
-                  className="px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
+                  className="px-3 py-1 bg-slate-200 cursor-pointer text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
                 >
                   Previous
                 </button>
@@ -190,7 +192,7 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
                 <button
                   onClick={() => setNetworkPage(Math.min(totalPages - 1, networkPage + 1))}
                   disabled={networkPage === totalPages - 1}
-                  className="px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
+                  className="px-3 py-1 bg-slate-200 cursor-pointer text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
                 >
                   Next
                 </button>
@@ -244,7 +246,7 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
               {customers.slice(0, 15).map((customer, index) => (
                 <tr
                   key={customer.customer}
-                  className="border-b border-slate-200 hover:bg-blue-50"
+                  className="border-b border-slate-200 cursor-pointer hover:bg-blue-50"
                   style={{
                     backgroundColor: index % 2 === 0 ? "#f8f8f8" : "white"
                   }}

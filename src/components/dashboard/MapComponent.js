@@ -69,7 +69,9 @@ export default function MapComponent({
   onCityClick,
   onReset,
   activeLayers,
-  facilities
+  facilities,
+  viewMode,
+  members
 }) {
   // Calculate max for scaling
   const maxTotalRows = locations.length > 0 ? Math.max(...locations.map((l) => l.totalRows || 0)) : 1;
@@ -200,30 +202,113 @@ export default function MapComponent({
                 }}
               >
                 <Popup>
-                  <div className="p-1 min-w-[200px]">
-                    <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
-                    <div className="bg-blue-50 p-2 rounded mb-2">
-                      <p className="text-blue-900 font-bold text-sm">Total Members: {location.totalRows}</p>
+                  {viewMode === "facility" && (
+                    <div className="p-1 min-w-[200px]">
+                      <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                      <div className="bg-blue-50 p-2 rounded mb-2">
+                        <p className="text-blue-900 font-bold text-sm">
+                          Total Customers: {location.totalRows}
+                        </p>
+                      </div>
+                      <div className="space-y-1 text-xs">
+                        <div className="flex justify-between">
+                          <span className="text-gray-600">Member Class A:</span>
+                          <span className="font-semibold text-gray-900">{location.memberClassA}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-gray-600">Member Class B:</span>
+                          <span className="font-semibold text-gray-900">{location.memberClassB}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-gray-600">Member Class C:</span>
+                          <span className="font-semibold text-gray-900">{location.memberClassC}</span>
+                        </div>
+                        <div className="flex justify-between border-t border-gray-300 pt-1 mt-1">
+                          <span className="text-gray-600">Non Member:</span>
+                          <span className="font-semibold text-gray-900">{location.nonMember}</span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="space-y-1 text-xs">
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Member Class A:</span>
-                        <span className="font-semibold text-gray-900">{location.memberClassA}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Member Class B:</span>
-                        <span className="font-semibold text-gray-900">{location.memberClassB}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Member Class C:</span>
-                        <span className="font-semibold text-gray-900">{location.memberClassC}</span>
-                      </div>
-                      <div className="flex justify-between border-t border-gray-300 pt-1 mt-1">
-                        <span className="text-gray-600">Non Member:</span>
-                        <span className="font-semibold text-gray-900">{location.nonMember}</span>
-                      </div>
-                    </div>
-                  </div>
+                  )}
+                  {viewMode === "network" &&
+                    (() => {
+                      const cityMembers = members.filter((m) => m.locationDisplay === location.city);
+                      const uniqueCustomers = [...new Set(cityMembers.map((m) => m.customer))];
+                      return (
+                        <div className="p-1 min-w-[200px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                          <div className="bg-purple-50 p-2 rounded mb-2">
+                            <p className="text-purple-900 font-bold text-sm">Network Info</p>
+                          </div>
+                          <div className="space-y-1 text-xs">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Total Companies:</span>
+                              <span className="font-semibold text-gray-900">{uniqueCustomers.length}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Total Connections:</span>
+                              <span className="font-semibold text-gray-900">{cityMembers.length}</span>
+                            </div>
+                            <div className="flex justify-between border-t border-gray-300 pt-1 mt-1">
+                              <span className="text-gray-600">Class A:</span>
+                              <span className="font-semibold text-gray-900">{location.memberClassA}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Class B:</span>
+                              <span className="font-semibold text-gray-900">{location.memberClassB}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Class C:</span>
+                              <span className="font-semibold text-gray-900">{location.memberClassC}</span>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })()}
+                  {viewMode === "exchange" &&
+                    (() => {
+                      const total = location.totalRows;
+                      const classAPercent =
+                        total > 0 ? ((location.memberClassA / total) * 100).toFixed(0) : 0;
+                      const classBPercent =
+                        total > 0 ? ((location.memberClassB / total) * 100).toFixed(0) : 0;
+                      const classCPercent =
+                        total > 0 ? ((location.memberClassC / total) * 100).toFixed(0) : 0;
+                      const nonMemberPercent =
+                        total > 0 ? ((location.nonMember / total) * 100).toFixed(0) : 0;
+                      return (
+                        <div className="p-1 min-w-[200px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                          <div className="bg-green-50 p-2 rounded mb-2">
+                            <p className="text-green-900 font-bold text-sm">Exchange Info</p>
+                          </div>
+                          <div className="space-y-1 text-xs">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Total Customers:</span>
+                              <span className="font-semibold text-gray-900">{total}</span>
+                            </div>
+                            <div className="border-t border-gray-300 pt-1 mt-1">
+                              <div className="flex justify-between">
+                                <span className="text-gray-600">Class A:</span>
+                                <span className="font-semibold text-gray-900">{classAPercent}%</span>
+                              </div>
+                              <div className="flex justify-between">
+                                <span className="text-gray-600">Class B:</span>
+                                <span className="font-semibold text-gray-900">{classBPercent}%</span>
+                              </div>
+                              <div className="flex justify-between">
+                                <span className="text-gray-600">Class C:</span>
+                                <span className="font-semibold text-gray-900">{classCPercent}%</span>
+                              </div>
+                              <div className="flex justify-between">
+                                <span className="text-gray-600">Non Member:</span>
+                                <span className="font-semibold text-gray-900">{nonMemberPercent}%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })()}
                 </Popup>
               </CircleMarker>
             );
@@ -255,12 +340,46 @@ export default function MapComponent({
                 }}
               >
                 <Popup>
-                  <div className="p-1 min-w-[150px]">
-                    <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
-                    <div className="bg-red-50 p-2 rounded">
-                      <p className="text-red-700 font-bold text-lg">Members: {location.totalRows}</p>
+                  {viewMode === "facility" && (
+                    <div className="p-1 min-w-[150px]">
+                      <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                      <div className="bg-red-50 p-2 rounded">
+                        <p className="text-red-700 font-bold text-lg">Customers: {location.totalRows}</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
+                  {viewMode === "network" &&
+                    (() => {
+                      const cityMembers = members.filter((m) => m.locationDisplay === location.city);
+                      const uniqueCustomers = [...new Set(cityMembers.map((m) => m.customer))];
+                      return (
+                        <div className="p-1 min-w-[180px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                          <div className="bg-red-50 p-2 rounded mb-2">
+                            <p className="text-red-700 font-bold text-base">Network Node</p>
+                          </div>
+                          <div className="text-xs space-y-1">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Companies:</span>
+                              <span className="font-semibold text-gray-900">{uniqueCustomers.length}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Connections:</span>
+                              <span className="font-semibold text-gray-900">{cityMembers.length}</span>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })()}
+                  {viewMode === "exchange" && (
+                    <div className="p-1 min-w-[150px]">
+                      <h3 className="font-bold text-gray-900 text-base mb-2">{location.city}</h3>
+                      <div className="bg-red-50 p-2 rounded">
+                        <p className="text-red-700 font-bold text-base">NCIX Location</p>
+                        <p className="text-red-600 text-sm mt-1">{location.totalRows} customers</p>
+                      </div>
+                    </div>
+                  )}
                 </Popup>
               </CircleMarker>
             );
@@ -292,14 +411,74 @@ export default function MapComponent({
                 }}
               >
                 <Popup>
-                  <div className="p-1 min-w-[180px]">
-                    <h3 className="font-bold text-gray-900 text-base mb-1">{location.city}</h3>
-                    <p className="text-gray-600 text-xs mb-2">{location.location}</p>
-                    <div className="bg-blue-50 p-2 rounded">
-                      <p className="text-blue-700 font-semibold text-sm">Network Node</p>
-                      <p className="text-gray-600 text-xs mt-1">Trace ASN connections</p>
+                  {viewMode === "facility" && (
+                    <div className="p-1 min-w-[180px]">
+                      <h3 className="font-bold text-gray-900 text-base mb-1">{location.city}</h3>
+                      <p className="text-gray-600 text-xs mb-2">{location.location}</p>
+                      <div className="bg-blue-50 p-2 rounded">
+                        <p className="text-blue-700 font-semibold text-sm">Network Node</p>
+                        <p className="text-gray-600 text-xs mt-1">Total: {location.totalRows} customers</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
+                  {viewMode === "network" &&
+                    (() => {
+                      const cityMembers = members.filter((m) => m.locationDisplay === location.city);
+                      const uniqueCustomers = [...new Set(cityMembers.map((m) => m.customer))];
+                      const topCustomers = uniqueCustomers.slice(0, 3);
+                      return (
+                        <div className="p-1 min-w-[200px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-1">{location.city}</h3>
+                          <div className="bg-blue-50 p-2 rounded mb-2">
+                            <p className="text-blue-700 font-semibold text-sm">ASN Network Hub</p>
+                          </div>
+                          <div className="text-xs space-y-1">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Companies:</span>
+                              <span className="font-semibold text-gray-900">{uniqueCustomers.length}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Connections:</span>
+                              <span className="font-semibold text-gray-900">{cityMembers.length}</span>
+                            </div>
+                            {topCustomers.length > 0 && (
+                              <div className="border-t border-gray-300 pt-1 mt-1">
+                                <p className="text-gray-600 mb-1">Top Companies:</p>
+                                <p className="text-gray-700">{topCustomers.join(", ")}</p>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })()}
+                  {viewMode === "exchange" &&
+                    (() => {
+                      const total = location.totalRows;
+                      const memberCount =
+                        location.memberClassA + location.memberClassB + location.memberClassC;
+                      return (
+                        <div className="p-1 min-w-[180px]">
+                          <h3 className="font-bold text-gray-900 text-base mb-1">{location.city}</h3>
+                          <div className="bg-blue-50 p-2 rounded mb-2">
+                            <p className="text-blue-700 font-semibold text-sm">NCIX Exchange Point</p>
+                          </div>
+                          <div className="text-xs space-y-1">
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Total Customers:</span>
+                              <span className="font-semibold text-gray-900">{total}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Members:</span>
+                              <span className="font-semibold text-gray-900">{memberCount}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-gray-600">Non-Members:</span>
+                              <span className="font-semibold text-gray-900">{location.nonMember}</span>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })()}
                 </Popup>
               </CircleMarker>
             );
