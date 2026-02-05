@@ -1,15 +1,15 @@
 "use client";
 
-import {useState} from "react";
+import { useState } from "react";
 import CitySummary from "@/src/components/dashboard/CitySummary";
 import DataTable from "@/src/components/dashboard/DataTable";
-import MapCanvas from "@/src/components/dashboard/MapCanvas";
+import MemberMap from "@/src/components/dashboard/MemberMap";
 import MembershipChart from "@/src/components/dashboard/MembershipChart";
 import Header from "@/src/components/layout/Header";
 import Sidebar from "@/src/components/layout/Sidebar";
 
 export default function Home() {
-  const [activeLayer, setActiveLayer] = useState("heatmap");
+  const [activeLayers, setActiveLayers] = useState(["heatmap"]); // Array of active layers
   const [viewMode, setViewMode] = useState("facility"); // facility, network, exchange
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedCustomer, setSelectedCustomer] = useState(null);
@@ -24,25 +24,39 @@ export default function Home() {
     setSelectedCity(null);
   };
 
+  const handleLayerToggle = (layer) => {
+    setActiveLayers((prev) => {
+      if (prev.includes(layer)) {
+        return prev.filter((l) => l !== layer);
+      } else {
+        return [...prev, layer];
+      }
+    });
+  };
+
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col w-screen h-screen overflow-hidden bg-white">
       <Header />
-      <div className="flex flex-1 gap-4 p-4">
+      <div className="flex flex-1 gap-4 p-4 overflow-hidden">
         <Sidebar
-          activeLayer={activeLayer}
-          onLayerChange={setActiveLayer}
+          activeLayers={activeLayers}
+          onLayerToggle={handleLayerToggle}
           viewMode={viewMode}
           onViewModeChange={setViewMode}
         />
-        <MapCanvas
-          activeLayer={activeLayer}
+        <MemberMap
+          activeLayers={activeLayers}
           viewMode={viewMode}
           selectedCity={selectedCity}
           onCityClick={handleCityClick}
         />
       </div>
-      <div className="flex gap-4 p-4 pt-0">
-        <CitySummary viewMode={viewMode} selectedCity={selectedCity} selectedCustomer={selectedCustomer} />
+      <div className="flex gap-4 p-4 pt-0 h-80 overflow-hidden">
+        <CitySummary
+          viewMode={viewMode}
+          selectedCity={selectedCity}
+          selectedCustomer={selectedCustomer}
+        />
         <MembershipChart
           viewMode={viewMode}
           selectedCity={selectedCity}

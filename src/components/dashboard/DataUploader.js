@@ -1,12 +1,13 @@
 "use client";
 
-import {useState} from "react";
+import { useState } from "react";
 
-export default function DataUploader({onUploadSuccess}) {
+export default function DataUploader({ onUploadSuccess }) {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
+  const [isDragOver, setIsDragOver] = useState(false);
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
@@ -38,7 +39,7 @@ export default function DataUploader({onUploadSuccess}) {
 
       const response = await fetch("/api/upload", {
         method: "POST",
-        body: formData
+        body: formData,
       });
 
       const result = await response.json();
@@ -47,7 +48,9 @@ export default function DataUploader({onUploadSuccess}) {
         throw new Error(result.error || "Upload failed");
       }
 
-      setSuccess(`Successfully processed ${result.statistics.processed} records!`);
+      setSuccess(
+        `Successfully processed ${result.statistics.processed} records!`,
+      );
       setFile(null);
 
       // Reset file input
@@ -68,11 +71,19 @@ export default function DataUploader({onUploadSuccess}) {
   const handleDragOver = (e) => {
     e.preventDefault();
     e.stopPropagation();
+    setIsDragOver(true);
+  };
+
+  const handleDragLeave = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragOver(false);
   };
 
   const handleDrop = (e) => {
     e.preventDefault();
     e.stopPropagation();
+    setIsDragOver(false);
 
     const droppedFile = e.dataTransfer.files[0];
     if (droppedFile) {
@@ -89,8 +100,13 @@ export default function DataUploader({onUploadSuccess}) {
   return (
     <div className="w-full max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <div
-        className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-blue-500 transition-colors"
+        className={`border-2 border-dashed rounded-lg p-8 text-center transition-all duration-200 ${
+          isDragOver
+            ? "border-blue-500 bg-blue-50 shadow-lg scale-105"
+            : "border-gray-300 hover:border-blue-500"
+        }`}
         onDragOver={handleDragOver}
+        onDragLeave={handleDragLeave}
         onDrop={handleDrop}
       >
         <div className="mb-4">
@@ -127,21 +143,31 @@ export default function DataUploader({onUploadSuccess}) {
           </label>
         </div>
 
-        <p className="text-sm text-gray-600">atau drag and drop file CSV di sini</p>
+        <p className="text-sm text-gray-600">
+          {isDragOver
+            ? "Lepaskan file di sini!"
+            : "atau drag and drop file CSV di sini"}
+        </p>
       </div>
 
       {file && (
-        <div className="mt-4 p-3 bg-gray-50 rounded-lg">
+        <div className="mt-4 p-3 bg-blue-100 rounded-lg">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <svg className="h-5 w-5 text-gray-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg
+                className="h-5 w-5 text-gray-400 mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
                 <path
                   fillRule="evenodd"
                   d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium text-gray-900">{file.name}</span>
+              <span className="text-sm font-medium text-gray-900">
+                {file.name}
+              </span>
             </div>
             <button
               onClick={() => {
@@ -149,7 +175,7 @@ export default function DataUploader({onUploadSuccess}) {
                 const fileInput = document.getElementById("file-upload");
                 if (fileInput) fileInput.value = "";
               }}
-              className="text-red-500 hover:text-red-700"
+              className="text-red-500 hover:text-red-700 cursor-pointer"
             >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
@@ -166,7 +192,11 @@ export default function DataUploader({onUploadSuccess}) {
       {error && (
         <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
           <div className="flex">
-            <svg className="h-5 w-5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+            <svg
+              className="h-5 w-5 text-red-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
               <path
                 fillRule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
@@ -181,7 +211,11 @@ export default function DataUploader({onUploadSuccess}) {
       {success && (
         <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
           <div className="flex">
-            <svg className="h-5 w-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+            <svg
+              className="h-5 w-5 text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
               <path
                 fillRule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -200,7 +234,7 @@ export default function DataUploader({onUploadSuccess}) {
           className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white ${
             !file || uploading
               ? "bg-gray-400 cursor-not-allowed"
-              : "bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+              : "bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 cursor-pointer"
           }`}
         >
           {uploading ? (
@@ -234,7 +268,9 @@ export default function DataUploader({onUploadSuccess}) {
       </div>
 
       <div className="mt-4 text-xs text-gray-500">
-        <p className="font-semibold mb-2">Format CSV yang diharapkan:</p>
+        <p className="font-semibold mb-2">
+          Format kolom CSV yang dapat diproses:
+        </p>
         <ul className="list-disc list-inside space-y-1">
           <li>PERIOD: Format periode (contoh: 202601)</li>
           <li>CUSTOMER: Nama customer</li>

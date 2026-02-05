@@ -47,7 +47,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
           : "Member Class C";
 
     return (
-      <div className="flex-1 border border-slate-300 p-6 rounded-md bg-white">
+      <div className="flex-1 border  border-slate-300 p-6 rounded-md bg-white">
         <h2 className="text-lg font-bold text-slate-800 mb-4">City Summary</h2>
 
         <div className="flex items-center gap-2 mb-4">
@@ -180,9 +180,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
           </div>
           <div className="flex justify-between py-2 border-b border-slate-200">
             <span className="font-medium">Cities Covered:</span>
-            <span className="font-bold">
-              {uniqueCities}/{totalCities}
-            </span>
+            <span className="font-bold">{uniqueCities}</span>
           </div>
           <div className="py-2 border-b border-slate-200">
             <span className="font-medium">Membership Mix:</span>
