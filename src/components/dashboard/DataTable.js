@@ -62,11 +62,10 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
               {paginatedMembers.map((member, index) => (
                 <tr
                   key={member.id}
-                  className="border-b border-slate-200 hover:bg-blue-50 cursor-pointer"
+                  className="border-b border-slate-200"
                   style={{
                     backgroundColor: index % 2 === 0 ? "#f8f8f8" : "white"
                   }}
-                  onClick={() => onCustomerClick && onCustomerClick(member.customer)}
                 >
                   <td className="p-2 text-slate-800 border-r border-slate-200">{member.customer}</td>
                   <td className="p-2 text-slate-600 border-r border-slate-200">{member.locationDisplay}</td>
@@ -305,11 +304,10 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
               {paginatedMembers.map((member, index) => (
                 <tr
                   key={member.id}
-                  className="border-b border-slate-200 hover:bg-blue-50 cursor-pointer"
+                  className="border-b border-slate-200"
                   style={{
                     backgroundColor: index % 2 === 0 ? "#f8f8f8" : "white"
                   }}
-                  onClick={() => onCustomerClick && onCustomerClick(member.customer)}
                 >
                   <td className="p-2 text-slate-800 border-r border-slate-200">{member.customer}</td>
                   <td className="p-2 text-slate-600 border-r border-slate-200">{member.locationDisplay}</td>

@@ -65,6 +65,7 @@ function CityFlyTo({selectedCity, locations}) {
 export default function MapComponent({
   locations,
   selectedCity,
+  selectedCustomer,
   onCityClick,
   onReset,
   activeLayers,
@@ -112,7 +113,7 @@ export default function MapComponent({
   return (
     <div className="w-full h-full rounded-lg overflow-hidden relative">
       {/* Reset Button */}
-      {selectedCity && (
+      {(selectedCity || selectedCustomer) && (
         <button
           onClick={onReset}
           className="absolute top-3 right-3 z-[1000] cursor-pointer bg-white px-3 py-2 rounded-md shadow-md border border-slate-300 hover:bg-slate-100 transition-colors flex items-center gap-2 text-sm font-medium text-slate-700"

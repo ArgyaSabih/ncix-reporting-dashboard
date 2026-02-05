@@ -21,7 +21,6 @@ export default function Home() {
 
   const handleCustomerClick = (customer) => {
     setSelectedCustomer(customer);
-    setSelectedCity(null);
   };
 
   const handleReset = () => {
@@ -54,6 +53,7 @@ export default function Home() {
           activeLayers={activeLayers}
           viewMode={viewMode}
           selectedCity={selectedCity}
+          selectedCustomer={selectedCustomer}
           onCityClick={handleCityClick}
           onReset={handleReset}
         />
