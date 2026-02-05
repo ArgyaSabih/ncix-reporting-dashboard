@@ -69,7 +69,7 @@ const DataTable = ({
               {paginatedMembers.map((member, index) => (
                 <tr
                   key={member.id}
-                  className="border-b border-slate-200 hover:bg-blue-50 cursor-pointer"
+                  className="border-b border-slate-200 hover:bg-blue-50"
                   style={{
                     backgroundColor: index % 2 === 0 ? "#f8f8f8" : "white",
                   }}
@@ -101,7 +101,7 @@ const DataTable = ({
             <button
               onClick={() => setFacilityPage(Math.max(0, facilityPage - 1))}
               disabled={facilityPage === 0}
-              className="px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
+              className="cursor-pointer px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
             >
               Previous
             </button>
@@ -113,7 +113,7 @@ const DataTable = ({
                 setFacilityPage(Math.min(totalPages - 1, facilityPage + 1))
               }
               disabled={facilityPage === totalPages - 1}
-              className="px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
+              className="cursor-pointer px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
             >
               Next
             </button>
@@ -172,7 +172,7 @@ const DataTable = ({
               {customers.slice(0, 15).map((customer, index) => (
                 <tr
                   key={customer.customer}
-                  className="border-b border-slate-200 hover:bg-blue-50 cursor-pointer"
+                  className="border-b border-slate-200 hover:bg-blue-50"
                   style={{
                     backgroundColor: index % 2 === 0 ? "#f8f8f8" : "white",
                   }}
@@ -231,7 +231,7 @@ const DataTable = ({
               {paginatedMembers.map((member, index) => (
                 <tr
                   key={member.id}
-                  className="border-b border-slate-200 hover:bg-blue-50 cursor-pointer"
+                  className="border-b border-slate-200 hover:bg-blue-50"
                   style={{
                     backgroundColor: index % 2 === 0 ? "#f8f8f8" : "white",
                   }}
@@ -263,7 +263,7 @@ const DataTable = ({
             <button
               onClick={() => setExchangePage(Math.max(0, exchangePage - 1))}
               disabled={exchangePage === 0}
-              className="px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
+              className="cursor-pointer px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
             >
               Previous
             </button>
@@ -275,7 +275,7 @@ const DataTable = ({
                 setExchangePage(Math.min(totalPages - 1, exchangePage + 1))
               }
               disabled={exchangePage === totalPages - 1}
-              className="px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
+              className="cursor-pointer px-3 py-1 bg-slate-200 text-slate-700 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-300"
             >
               Next
             </button>
