@@ -1,15 +1,22 @@
 "use client";
 
-import {useState} from "react";
+import {useState, useMemo} from "react";
 import {useMemberData} from "@/src/utils";
+import {usePeriodFilter, filterMembersByPeriod} from "@/src/context/PeriodFilterContext";
 
 const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) => {
   const {data, loading} = useMemberData();
+  const {selectedPeriod} = usePeriodFilter();
   const [facilityPage, setFacilityPage] = useState(0);
   const [networkPage, setNetworkPage] = useState(0);
   const [exchangePage, setExchangePage] = useState(0);
   const itemsPerPage = 15;
   const [prevCityId, setPrevCityId] = useState(selectedCity?.city);
+
+  // Filter members by selected period
+  const members = useMemo(() => {
+    return filterMembersByPeriod(data?.members, selectedPeriod);
+  }, [data?.members, selectedPeriod]);
 
   if (selectedCity?.city !== prevCityId) {
     setPrevCityId(selectedCity?.city);
@@ -30,8 +37,8 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
   // FACILITY VIEW - Members in selected city
   if (viewMode === "facility") {
     const filteredMembers = selectedCity
-      ? data.members.filter((m) => m.locationDisplay === selectedCity.city)
-      : data.members;
+      ? members.filter((m) => m.locationDisplay === selectedCity.city)
+      : members;
 
     const startIdx = facilityPage * itemsPerPage;
     const endIdx = startIdx + itemsPerPage;
@@ -110,7 +117,7 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
   if (viewMode === "network") {
     // If city is selected, show customers in that city
     if (selectedCity) {
-      const cityMembers = data.members.filter((m) => m.locationDisplay === selectedCity.city);
+      const cityMembers = members.filter((m) => m.locationDisplay === selectedCity.city);
       const customerGroups = {};
       cityMembers.forEach((member) => {
         if (!customerGroups[member.customer]) {
@@ -205,7 +212,7 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
 
     // Default: Group by customer (overall view)
     const customerGroups = {};
-    data.members.forEach((member) => {
+    members.forEach((member) => {
       if (!customerGroups[member.customer]) {
         customerGroups[member.customer] = {
           customer: member.customer,
@@ -275,8 +282,8 @@ const DataTable = ({viewMode, selectedCity, selectedCustomer, onCustomerClick}) 
   if (viewMode === "exchange") {
     // Filter by selected city if any
     const filteredMembers = selectedCity
-      ? data.members.filter((m) => m.locationDisplay === selectedCity.city)
-      : data.members;
+      ? members.filter((m) => m.locationDisplay === selectedCity.city)
+      : members;
 
     const startIdx = exchangePage * itemsPerPage;
     const endIdx = startIdx + itemsPerPage;

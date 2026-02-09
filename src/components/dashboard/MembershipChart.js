@@ -1,9 +1,17 @@
 "use client";
 
+import {useMemo} from "react";
 import {useMemberData, getMembershipDistribution, getLocationStats} from "@/src/utils";
+import {usePeriodFilter, filterMembersByPeriod} from "@/src/context/PeriodFilterContext";
 
 const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
   const {data, loading} = useMemberData();
+  const {selectedPeriod} = usePeriodFilter();
+
+  // Filter members by selected period
+  const members = useMemo(() => {
+    return filterMembersByPeriod(data?.members, selectedPeriod);
+  }, [data?.members, selectedPeriod]);
 
   if (loading || !data) {
     return (
@@ -24,8 +32,8 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
   // FACILITY VIEW - City Membership Mix
   if (viewMode === "facility") {
     const cityMembers = selectedCity
-      ? data.members.filter((m) => m.locationDisplay === selectedCity.city)
-      : data.members;
+      ? members.filter((m) => m.locationDisplay === selectedCity.city)
+      : members;
 
     const total = cityMembers.length;
     const breakdown = {
@@ -85,7 +93,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
   if (viewMode === "network") {
     // If city is selected, show customers in that city
     if (selectedCity) {
-      const cityMembers = data.members.filter((m) => m.locationDisplay === selectedCity.city);
+      const cityMembers = members.filter((m) => m.locationDisplay === selectedCity.city);
       const customerGroups = {};
       cityMembers.forEach((member) => {
         if (!customerGroups[member.customer]) {
@@ -138,7 +146,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
 
     // Default: Group by customer and count cities (overall view)
     const customerGroups = {};
-    data.members.forEach((member) => {
+    members.forEach((member) => {
       if (!customerGroups[member.customer]) {
         customerGroups[member.customer] = {
           customer: member.customer,
@@ -188,7 +196,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
   if (viewMode === "exchange") {
     // If city is selected, show membership breakdown for that city
     if (selectedCity) {
-      const cityMembers = data.members.filter((m) => m.locationDisplay === selectedCity.city);
+      const cityMembers = members.filter((m) => m.locationDisplay === selectedCity.city);
       const total = cityMembers.length;
       const breakdown = {
         "Class A": cityMembers.filter((m) => m.membershipType === "Class A").length,
@@ -245,7 +253,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
     }
 
     // Default: Overall top cities view
-    const locationStats = getLocationStats(data.members);
+    const locationStats = getLocationStats(members);
     const topCities = locationStats.slice(0, 5);
     const maxCount = topCities[0]?.count || 1;
 
@@ -282,7 +290,7 @@ const MembershipChart = ({viewMode, selectedCity, selectedCustomer}) => {
               </div>
               <div className="text-center p-3 bg-green-50 rounded-md">
                 <p className="text-xs text-slate-600 mb-1">Total Customers</p>
-                <p className="text-xl font-bold text-green-600">{data.members.length}</p>
+                <p className="text-xl font-bold text-green-600">{members.length}</p>
               </div>
             </div>
           </div>

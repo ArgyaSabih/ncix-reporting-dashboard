@@ -2,6 +2,7 @@
 
 import {useMemo} from "react";
 import {useMemberData} from "@/src/hooks/useDataHooks";
+import {usePeriodFilter, filterMembersByPeriod} from "@/src/context/PeriodFilterContext";
 import dynamic from "next/dynamic";
 
 // Dynamically import the map component to avoid SSR issues with Leaflet
@@ -26,14 +27,20 @@ export default function MemberMap({
   onReset
 }) {
   const {data, loading, error} = useMemberData();
+  const {selectedPeriod} = usePeriodFilter();
+
+  // Filter members by selected period
+  const filteredMembers = useMemo(() => {
+    return filterMembersByPeriod(data?.members, selectedPeriod);
+  }, [data?.members, selectedPeriod]);
 
   // Use useMemo instead of useState + useEffect to avoid the setState in effect warning
   const locations = useMemo(() => {
-    if (!data?.members) return [];
+    if (!filteredMembers || filteredMembers.length === 0) return [];
 
     // Group members by location
     const locationGroups = {};
-    data.members.forEach((member) => {
+    filteredMembers.forEach((member) => {
       const key = member.location;
       if (!locationGroups[key]) {
         locationGroups[key] = {
@@ -80,7 +87,7 @@ export default function MemberMap({
       uniqueMemberCount: loc.uniqueMembers.size,
       uniqueMembers: undefined // Remove Set from output
     }));
-  }, [data]);
+  }, [filteredMembers]);
 
   if (loading) {
     return (
@@ -115,7 +122,7 @@ export default function MemberMap({
         activeLayers={activeLayers}
         facilities={data?.facilities || []}
         viewMode={viewMode}
-        members={data?.members || []}
+        members={filteredMembers || []}
       />
     </div>
   );
