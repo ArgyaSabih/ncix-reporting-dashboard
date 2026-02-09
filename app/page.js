@@ -7,6 +7,7 @@ import MemberMap from "@/src/components/dashboard/MemberMap";
 import MembershipChart from "@/src/components/dashboard/MembershipChart";
 import Header from "@/src/components/layout/Header";
 import Sidebar from "@/src/components/layout/Sidebar";
+import {PeriodFilterProvider} from "@/src/context/PeriodFilterContext";
 
 export default function Home() {
   const [activeLayers, setActiveLayers] = useState(["heatmap"]); // Array of active layers
@@ -40,38 +41,40 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col w-screen h-screen overflow-hidden bg-white">
-      <Header />
-      <div className="flex flex-1 gap-4 p-4 overflow-hidden">
-        <Sidebar
-          activeLayers={activeLayers}
-          onLayerToggle={handleLayerToggle}
-          viewMode={viewMode}
-          onViewModeChange={setViewMode}
-        />
-        <MemberMap
-          activeLayers={activeLayers}
-          viewMode={viewMode}
-          selectedCity={selectedCity}
-          selectedCustomer={selectedCustomer}
-          onCityClick={handleCityClick}
-          onReset={handleReset}
-        />
+    <PeriodFilterProvider>
+      <div className="flex flex-col w-screen h-screen overflow-hidden bg-white">
+        <Header />
+        <div className="flex flex-1 gap-4 p-4 overflow-hidden">
+          <Sidebar
+            activeLayers={activeLayers}
+            onLayerToggle={handleLayerToggle}
+            viewMode={viewMode}
+            onViewModeChange={setViewMode}
+          />
+          <MemberMap
+            activeLayers={activeLayers}
+            viewMode={viewMode}
+            selectedCity={selectedCity}
+            selectedCustomer={selectedCustomer}
+            onCityClick={handleCityClick}
+            onReset={handleReset}
+          />
+        </div>
+        <div className="flex gap-4 p-4 pt-0 h-80 overflow-hidden">
+          <CitySummary viewMode={viewMode} selectedCity={selectedCity} selectedCustomer={selectedCustomer} />
+          <MembershipChart
+            viewMode={viewMode}
+            selectedCity={selectedCity}
+            selectedCustomer={selectedCustomer}
+          />
+          <DataTable
+            viewMode={viewMode}
+            selectedCity={selectedCity}
+            selectedCustomer={selectedCustomer}
+            onCustomerClick={handleCustomerClick}
+          />
+        </div>
       </div>
-      <div className="flex gap-4 p-4 pt-0 h-80 overflow-hidden">
-        <CitySummary viewMode={viewMode} selectedCity={selectedCity} selectedCustomer={selectedCustomer} />
-        <MembershipChart
-          viewMode={viewMode}
-          selectedCity={selectedCity}
-          selectedCustomer={selectedCustomer}
-        />
-        <DataTable
-          viewMode={viewMode}
-          selectedCity={selectedCity}
-          selectedCustomer={selectedCustomer}
-          onCustomerClick={handleCustomerClick}
-        />
-      </div>
-    </div>
+    </PeriodFilterProvider>
   );
 }

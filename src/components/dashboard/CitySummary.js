@@ -1,9 +1,17 @@
 "use client";
 
+import {useMemo} from "react";
 import {useMemberData, getLocationStats} from "@/src/utils";
+import {usePeriodFilter, filterMembersByPeriod} from "@/src/context/PeriodFilterContext";
 
 const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
   const {data, loading} = useMemberData();
+  const {selectedPeriod} = usePeriodFilter();
+
+  // Filter members by selected period
+  const members = useMemo(() => {
+    return filterMembersByPeriod(data?.members, selectedPeriod);
+  }, [data?.members, selectedPeriod]);
 
   if (loading || !data) {
     return (
@@ -14,19 +22,19 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
     );
   }
 
-  const locationStats = getLocationStats(data.members);
+  const locationStats = getLocationStats(members);
   const totalCities = 19; // Total possible cities
 
   // FACILITY VIEW - City Summary
   if (viewMode === "facility") {
     // If no city selected, show overall summary
     if (!selectedCity) {
-      const totalMembers = data.members.length;
+      const totalMembers = members.length;
       const breakdown = {
-        "Class A": data.members.filter((m) => m.membershipType === "Class A").length,
-        "Class B": data.members.filter((m) => m.membershipType === "Class B").length,
-        "Class C": data.members.filter((m) => m.membershipType === "Class C").length,
-        "Non-Member": data.members.filter((m) => m.membershipType === "Non-Member").length
+        "Class A": members.filter((m) => m.membershipType === "Class A").length,
+        "Class B": members.filter((m) => m.membershipType === "Class B").length,
+        "Class C": members.filter((m) => m.membershipType === "Class C").length,
+        "Non-Member": members.filter((m) => m.membershipType === "Non-Member").length
       };
 
       const topMember =
@@ -80,7 +88,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
     }
 
     // Get membership breakdown for selected city
-    const cityMembers = data.members.filter((m) => m.locationDisplay === selectedCity.city);
+    const cityMembers = members.filter((m) => m.locationDisplay === selectedCity.city);
     const breakdown = {
       "Class A": cityMembers.filter((m) => m.membershipType === "Class A").length,
       "Class B": cityMembers.filter((m) => m.membershipType === "Class B").length,
@@ -163,7 +171,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
   if (viewMode === "network") {
     // Group by customer for all cases
     const customerGroups = {};
-    data.members.forEach((member) => {
+    members.forEach((member) => {
       if (!customerGroups[member.customer]) {
         customerGroups[member.customer] = {
           customer: member.customer,
@@ -215,7 +223,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
 
     // Priority 2: If city is selected (but no customer), show city-specific network info
     if (selectedCity) {
-      const cityMembers = data.members.filter((m) => m.locationDisplay === selectedCity.city);
+      const cityMembers = members.filter((m) => m.locationDisplay === selectedCity.city);
       const uniqueCustomers = [...new Set(cityMembers.map((m) => m.customer))];
       const breakdown = {
         "Class A": cityMembers.filter((m) => m.membershipType === "Class A").length,
@@ -308,7 +316,7 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
   if (viewMode === "exchange") {
     // If city is selected, show city-specific exchange info
     if (selectedCity) {
-      const cityMembers = data.members.filter((m) => m.locationDisplay === selectedCity.city);
+      const cityMembers = members.filter((m) => m.locationDisplay === selectedCity.city);
       const totalMembers = cityMembers.length;
 
       const breakdown = {
@@ -375,14 +383,14 @@ const CitySummary = ({viewMode, selectedCity, selectedCustomer}) => {
     }
 
     // Default: Overall NCIX summary
-    const uniqueCities = new Set(data.members.map((m) => m.locationDisplay)).size;
-    const totalMembers = data.members.length;
+    const uniqueCities = new Set(members.map((m) => m.locationDisplay)).size;
+    const totalMembers = members.length;
 
     const breakdown = {
-      "Class A": data.members.filter((m) => m.membershipType === "Class A").length,
-      "Class B": data.members.filter((m) => m.membershipType === "Class B").length,
-      "Class C": data.members.filter((m) => m.membershipType === "Class C").length,
-      "Non-Member": data.members.filter((m) => m.membershipType === "Non-Member").length
+      "Class A": members.filter((m) => m.membershipType === "Class A").length,
+      "Class B": members.filter((m) => m.membershipType === "Class B").length,
+      "Class C": members.filter((m) => m.membershipType === "Class C").length,
+      "Non-Member": members.filter((m) => m.membershipType === "Non-Member").length
     };
 
     // Find top city
