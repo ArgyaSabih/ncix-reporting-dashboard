@@ -341,10 +341,14 @@ const DataTable = ({
 
   // EXCHANGE VIEW - All members overview dengan pagination
   if (viewMode === "exchange") {
-    // Filter berdasarkan membership
-    let filteredAllMembers = data.members;
+    // Filter berdasarkan lokasi terlebih dahulu
+    let filteredAllMembers = selectedCity
+      ? data.members.filter((m) => m.locationDisplay === selectedCity.city)
+      : data.members;
+
+    // Terapkan filter membership
     if (membershipFilter !== "All") {
-      filteredAllMembers = data.members.filter(
+      filteredAllMembers = filteredAllMembers.filter(
         (m) => m.membershipType === membershipFilter,
       );
     }
@@ -355,20 +359,25 @@ const DataTable = ({
     const totalPages = Math.ceil(filteredAllMembers.length / itemsPerPage);
 
     // Tentukan title berdasarkan filter
-    const titleText =
-      membershipFilter === "All"
-        ? "All Customers"
-        : `All ${membershipFilter} Customers`;
+    let titleText = selectedCity
+      ? `Members in ${selectedCity.city}`
+      : "All Customers";
+    if (membershipFilter !== "All") {
+      titleText += ` - ${membershipFilter}`;
+    }
 
     return (
-      <div className="flex-1 border border-slate-300 p-4 rounded-md bg-white flex flex-col">
+      <div
+        key={selectedCity?.city}
+        className="flex-1 border border-slate-300 p-4 rounded-md bg-white flex flex-col"
+      >
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-lg font-bold text-slate-800">{titleText}</h2>
           <select
             value={membershipFilter}
             onChange={(e) => {
               setMembershipFilter(e.target.value);
-              setExchangePage(0); // Reset ke halaman 1
+              setExchangePage(0);
             }}
             className="px-3 py-1 border border-slate-300 rounded bg-white text-slate-700 hover:border-slate-400 cursor-pointer"
           >
