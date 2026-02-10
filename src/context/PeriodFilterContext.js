@@ -51,7 +51,24 @@ export function formatPeriod(period) {
  */
 export function filterMembersByPeriod(members, selectedPeriod) {
   if (!members) return [];
-  if (selectedPeriod === "all") return members;
+
+  // For "all" period, deduplicate by (customer, location) and keep only the newest period
+  if (selectedPeriod === "all") {
+    const groupedMembers = new Map();
+
+    members.forEach((member) => {
+      const key = `${member.customer}|${member.location}`;
+      const existing = groupedMembers.get(key);
+
+      // If no existing entry or current member has a newer period, update the map
+      if (!existing || member.period > existing.period) {
+        groupedMembers.set(key, member);
+      }
+    });
+
+    return Array.from(groupedMembers.values());
+  }
+
   return members.filter((member) => member.period === selectedPeriod);
 }
 
