@@ -114,3 +114,16 @@ src/
 ├── hooks/              # Custom React hooks
 └── utils/              # Helper functions
 ```
+
+## 📊 Data Flow Documentation
+
+Untuk memahami alur proses data dalam aplikasi ini secara detail, lihat dokumentasi flowchart lengkap:
+
+👉 **[Flowchart Proses Data](docs/FLOWCHART.md)**
+
+Dokumentasi ini mencakup:
+- Alur lengkap dari upload CSV hingga visualisasi UI
+- Flowchart detail untuk setiap tahapan proses
+- Penjelasan state management dan user interactions
+- Data transformation dan filtering logic
+- Sequence diagram untuk real-time updates
